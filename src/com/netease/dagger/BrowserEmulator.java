@@ -52,12 +52,11 @@ public class BrowserEmulator {
 
 	public BrowserEmulator() {
 		setupBrowserCoreType(GlobalSettings.BrowserCoreType);
-		browser = new WebDriverBackedSelenium(browserCore, "www.163.com");
+		browser = new WebDriverBackedSelenium(browserCore, "http://www.163.com/");
 		javaScriptExecutor = (JavascriptExecutor) browserCore;
 		logger.info("Started BrowserEmulator");
 	}
 
-	@SuppressWarnings("deprecation")
 	private void setupBrowserCoreType(int type) {
 		if (type == 1) {
 			browserCore = new FirefoxDriver();
@@ -65,7 +64,7 @@ public class BrowserEmulator {
 			return;
 		}
 		if (type == 2) {
-			chromeServer = new ChromeDriverService.Builder().usingChromeDriverExecutable(new File(GlobalSettings.ChromeDriverPath)).usingAnyFreePort().build();
+			chromeServer = new ChromeDriverService.Builder().usingDriverExecutable(new File(GlobalSettings.ChromeDriverPath)).usingAnyFreePort().build();
 			try {
 				chromeServer.start();
 			} catch (IOException e) {
