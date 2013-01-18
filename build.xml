@@ -5,8 +5,11 @@
 
 	<path id="cpath">
 		<fileset dir="lib">
-			<include name="*.jar" />
-			<include name="**/*.jar"/>
+			<include name="testng-re-html.jar"/>
+			<include name="log4j-1.2.16.jar" />
+		</fileset>
+		<fileset dir="lib">
+			<include name="selenium-server-standalone-2.29.0.jar" />
 		</fileset>
 	</path>
 
