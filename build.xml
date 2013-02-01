@@ -33,5 +33,12 @@
 			<xmlfileset dir="test-xml" includes="demo.xml" />
 		</testng>
 	</target>
+	
+	<target name="jar" depends="compile">
+		<delete dir="build" />
+		<mkdir dir="build" />
+		<jar destfile="build/dagger-1.0.jar" basedir="bin" excludes="**/demo/">
+		</jar>
+	</target>
 
 </project>
