@@ -31,7 +31,7 @@ Dagger is a light, robust Web UI autotest framework based on [Selenium](http://s
 
 Dagger is quite suitable for a small group to kick off Web UI autotest, for this case, just checkout Dagger with Eclipse and write testcases within it.
 
-Already have an autotest framework? Please build Dagger into a .jar file to use. However, no build script now :-( 
+Already have an autotest framework? Please build Dagger into a .jar file to use, see [this](https://github.com/NetEase/Dagger/wiki/FAQ) 
 
 ## Contributors
 
