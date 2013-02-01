@@ -382,7 +382,8 @@ public class BrowserEmulator {
 	 * @param text
 	 *            the expected text
 	 * @param time           
-	 *            wait a moment (in millisecond) before search text on page
+	 *            wait a moment (in millisecond) before search text on page;<br>
+	 *            minus time means search text at once
 	 * @return
 	 */
 	public boolean isTextPresent(String text, int time) {
@@ -403,7 +404,8 @@ public class BrowserEmulator {
 	 * @param xpath
 	 *            the expected element's xpath
 	 * @param time           
-	 *            wait a moment (in millisecond) before search element on page
+	 *            wait a moment (in millisecond) before search element on page;<br>
+	 *            minus time means search element at once
 	 * @return
 	 */
 	public boolean isElementPresent(String xpath, int time) {
