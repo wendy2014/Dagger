@@ -40,5 +40,12 @@
 		<jar destfile="build/dagger-1.0.jar" basedir="bin" excludes="**/demo/">
 		</jar>
 	</target>
+	
+	<target name="jar-src">
+		<delete dir="build" />
+		<mkdir dir="build" />
+		<jar destfile="build/dagger-1.0-src.jar" basedir="src" excludes="**/demo/">
+		</jar>
+	</target>
 
 </project>
