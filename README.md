@@ -1,6 +1,6 @@
 ## Dagger - a light, robust Web UI autotest framework
 
-Dagger is a light, robust Web UI autotest framework based on [Selenium](http://seleniumhq.org/) and [TestNg](http://testng.org/doc/index.html).
+Dagger is a light, robust Web UI autotest framework based on [Selenium](http://seleniumhq.org/) and [TestNg](http://testng.org/doc/index.html).（中文介绍参见[这里](https://github.com/NetEase/Dagger/wiki/Dagger)）
 
 > Dagger is an automation framework first, it provides APIs to control browsers;
 > 
