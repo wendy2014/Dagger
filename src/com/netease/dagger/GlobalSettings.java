@@ -37,8 +37,8 @@ public class GlobalSettings {
 
 	public static String timeout = prop.getProperty("Timeout", "30000");
 
-	public static String getProperty(String Property) {
-		return prop.getProperty(Property);
+	public static String getProperty(String property) {
+		return prop.getProperty(property);
 	}
 	
 	public static Properties getProperties() {
