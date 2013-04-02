@@ -77,7 +77,7 @@ public class BrowserEmulator {
 			return;
 		}
 		if (type == 3) {
-			System.setProperty("webdriver.ie.driver", GlobalSettings.iEDriverPath);
+			System.setProperty("webdriver.ie.driver", GlobalSettings.ieDriverPath);
 			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			browserCore = new InternetExplorerDriver(capabilities);

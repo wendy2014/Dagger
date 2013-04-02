@@ -31,7 +31,7 @@ public class GlobalSettings {
 
 	public static String chromeDriverPath = prop.getProperty("ChromeDriverPath", "res/chromedriver_for_win.exe");
 	
-	public static String iEDriverPath = prop.getProperty("IEDriverPath", "res/iedriver_32.exe");
+	public static String ieDriverPath = prop.getProperty("IEDriverPath", "res/iedriver_32.exe");
 
 	public static String stepInterval = prop.getProperty("StepInterval", "500");
 
