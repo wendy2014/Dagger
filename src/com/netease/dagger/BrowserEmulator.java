@@ -45,13 +45,13 @@ public class BrowserEmulator {
 	ChromeDriverService chromeServer;
 	JavascriptExecutor javaScriptExecutor;
 	
-	int stepInterval = Integer.parseInt(GlobalSettings.StepInterval);
-	int timeout = Integer.parseInt(GlobalSettings.Timeout);
+	int stepInterval = Integer.parseInt(GlobalSettings.stepInterval);
+	int timeout = Integer.parseInt(GlobalSettings.timeout);
 	
 	private static Logger logger = Logger.getLogger(BrowserEmulator.class.getName());
 
 	public BrowserEmulator() {
-		setupBrowserCoreType(GlobalSettings.BrowserCoreType);
+		setupBrowserCoreType(GlobalSettings.browserCoreType);
 		browser = new WebDriverBackedSelenium(browserCore, "http://www.163.com/");
 		javaScriptExecutor = (JavascriptExecutor) browserCore;
 		logger.info("Started BrowserEmulator");
@@ -64,7 +64,7 @@ public class BrowserEmulator {
 			return;
 		}
 		if (type == 2) {
-			chromeServer = new ChromeDriverService.Builder().usingDriverExecutable(new File(GlobalSettings.ChromeDriverPath)).usingAnyFreePort().build();
+			chromeServer = new ChromeDriverService.Builder().usingDriverExecutable(new File(GlobalSettings.chromeDriverPath)).usingAnyFreePort().build();
 			try {
 				chromeServer.start();
 			} catch (IOException e) {
@@ -77,7 +77,7 @@ public class BrowserEmulator {
 			return;
 		}
 		if (type == 3) {
-			System.setProperty("webdriver.ie.driver", GlobalSettings.IEDriverPath);
+			System.setProperty("webdriver.ie.driver", GlobalSettings.iEDriverPath);
 			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 			browserCore = new InternetExplorerDriver(capabilities);
@@ -134,7 +134,7 @@ public class BrowserEmulator {
 	public void quit() {
 		pause(stepInterval);
 		browserCore.quit();
-		if (GlobalSettings.BrowserCoreType == 2) {
+		if (GlobalSettings.browserCoreType == 2) {
 			chromeServer.stop();
 		}
 		logger.info("Quitted BrowserEmulator");
@@ -216,10 +216,10 @@ public class BrowserEmulator {
 		pause(stepInterval);
 		expectElementExistOrNot(true, xpath, timeout);
 
-		if (GlobalSettings.BrowserCoreType == 1) {
+		if (GlobalSettings.browserCoreType == 1) {
 			Assert.fail("Mouseover is not supported for Firefox now");
 		}
-		if (GlobalSettings.BrowserCoreType == 2) {
+		if (GlobalSettings.browserCoreType == 2) {
 			// First make mouse out of browser
 			Robot rb = null;
 			try {
@@ -242,7 +242,7 @@ public class BrowserEmulator {
 			logger.info("Mouseover " + xpath);
 			return;
 		} 
-		if (GlobalSettings.BrowserCoreType == 3) {
+		if (GlobalSettings.browserCoreType == 3) {
 			Assert.fail("Mouseover is not supported for IE now");
 		}
 		

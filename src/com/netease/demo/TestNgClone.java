@@ -22,6 +22,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.netease.dagger.BrowserEmulator;
 
+/**
+ * A clone of TestNg.java to show "Parallel Mode"<br>
+ * Please see https://github.com/NetEase/Dagger/wiki/Parallel-Mode
+ * @author ChenKan
+ */
 public class TestNgClone {
 
 	String googleUrl = "http://www.google.com";

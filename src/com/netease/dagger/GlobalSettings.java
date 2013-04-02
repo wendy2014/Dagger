@@ -19,19 +19,23 @@ package com.netease.dagger;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+/**
+ * Global Settings
+ * @author ChenKan
+ */
 public class GlobalSettings {
 
 	public static Properties prop = getProperties();
 
-	public static int BrowserCoreType = Integer.parseInt(prop.getProperty("BrowserCoreType", "2"));
+	public static int browserCoreType = Integer.parseInt(prop.getProperty("BrowserCoreType", "2"));
 
-	public static String ChromeDriverPath = prop.getProperty("ChromeDriverPath", "res/chromedriver_for_win.exe");
+	public static String chromeDriverPath = prop.getProperty("ChromeDriverPath", "res/chromedriver_for_win.exe");
 	
-	public static String IEDriverPath = prop.getProperty("IEDriverPath", "res/iedriver_32.exe");
+	public static String iEDriverPath = prop.getProperty("IEDriverPath", "res/iedriver_32.exe");
 
-	public static String StepInterval = prop.getProperty("StepInterval", "500");
+	public static String stepInterval = prop.getProperty("StepInterval", "500");
 
-	public static String Timeout = prop.getProperty("Timeout", "30000");
+	public static String timeout = prop.getProperty("Timeout", "30000");
 
 	public static String getProperty(String Property) {
 		return prop.getProperty(Property);

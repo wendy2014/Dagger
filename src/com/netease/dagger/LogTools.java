@@ -27,6 +27,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.Augmenter;
 
+/**
+ * Log Tools
+ * @author ChenKan
+ */
 public class LogTools {
 
 	public static void log(String logText) {
@@ -39,11 +43,11 @@ public class LogTools {
 		String screenShotPath = dir + File.separator + time + ".png";
 
 		WebDriver augmentedDriver = null;
-		if (GlobalSettings.BrowserCoreType == 1 || GlobalSettings.BrowserCoreType == 3) {
+		if (GlobalSettings.browserCoreType == 1 || GlobalSettings.browserCoreType == 3) {
 			augmentedDriver = be.getBrowserCore();
 			augmentedDriver.manage().window().setPosition(new Point(0, 0));
 			augmentedDriver.manage().window().setSize(new Dimension(9999, 9999));
-		} else if (GlobalSettings.BrowserCoreType == 2) {
+		} else if (GlobalSettings.browserCoreType == 2) {
 			augmentedDriver = new Augmenter().augment(be.getBrowserCore());
 		} else {
 			return "Incorrect browser type";

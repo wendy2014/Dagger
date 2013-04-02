@@ -22,6 +22,10 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.netease.dagger.BrowserEmulator;
 
+/**
+ * The demo to show TestNg's basic usage
+ * @author ChenKan
+ */
 public class TestNg {
 
 	String googleUrl = "http://www.google.com";

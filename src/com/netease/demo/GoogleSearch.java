@@ -18,6 +18,10 @@ package com.netease.demo;
 
 import com.netease.dagger.BrowserEmulator;
 
+/**
+ * The demo to show Dagger's basic usage
+ * @author ChenKan
+ */
 public class GoogleSearch {
 
 	public static void main(String[] args) {
