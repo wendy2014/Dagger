@@ -326,7 +326,7 @@ public class BrowserEmulator {
 			try {
 				new Wait() {
 					public boolean until() {
-						return isTextPresent(text);
+						return isTextPresent(text, -1);
 					}
 				}.wait("Failed to find text " + text, timeout);
 			} catch (Exception e) {
@@ -335,8 +335,7 @@ public class BrowserEmulator {
 			}
 			logger.info("Found desired text " + text);
 		} else {
-			pause(timeout);
-			if (isTextPresent(text)) {
+			if (isTextPresent(text, timeout)) {
 				handleFailure("Found undesired text " + text);
 			} else {
 				logger.info("Not found undesired text " + text);
@@ -361,7 +360,7 @@ public class BrowserEmulator {
 			try {
 				new Wait() {
 					public boolean until() {
-						return isElementPresent(xpath);
+						return isElementPresent(xpath, -1);
 					}
 				}.wait("Failed to find element " + xpath, timeout);
 			} catch (Exception e) {
@@ -370,8 +369,7 @@ public class BrowserEmulator {
 			}
 			logger.info("Found desired element " + xpath);
 		} else {
-			pause(timeout);
-			if (isElementPresent(xpath)) {
+			if (isElementPresent(xpath, timeout)) {
 				handleFailure("Found undesired element " + xpath);
 			} else {
 				logger.info("Not found undesired element " + xpath);
@@ -383,9 +381,13 @@ public class BrowserEmulator {
 	 * Is the text present on the page
 	 * @param text
 	 *            the expected text
+	 * @param time           
+	 *            wait a moment (in millisecond) before search text on page;<br>
+	 *            minus time means search text at once
 	 * @return
 	 */
-	public boolean isTextPresent(String text) {
+	public boolean isTextPresent(String text, int time) {
+		pause(time);
 		boolean isPresent = browser.isTextPresent(text);
 		if (isPresent) {
 			logger.info("Found text " + text);
@@ -401,9 +403,13 @@ public class BrowserEmulator {
 	 * Here <b>present</b> means <b>visible</b>
 	 * @param xpath
 	 *            the expected element's xpath
+	 * @param time           
+	 *            wait a moment (in millisecond) before search element on page;<br>
+	 *            minus time means search element at once
 	 * @return
 	 */
-	public boolean isElementPresent(String xpath) {
+	public boolean isElementPresent(String xpath, int time) {
+		pause(time);
 		boolean isPresent = browser.isElementPresent(xpath) && browserCore.findElementByXPath(xpath).isDisplayed();
 		if (isPresent) {
 			logger.info("Found element " + xpath);
@@ -419,6 +425,9 @@ public class BrowserEmulator {
 	 * @param time in millisecond
 	 */
 	private void pause(int time) {
+		if (time <= 0) {
+			return;
+		}
 		try {
 			Thread.sleep(time);
 		} catch (InterruptedException e) {
