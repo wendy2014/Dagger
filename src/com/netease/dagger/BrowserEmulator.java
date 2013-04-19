@@ -424,12 +424,13 @@ public class BrowserEmulator {
 	 * Pause
 	 * @param time in millisecond
 	 */
-	private void pause(int time) {
+	public void pause(int time) {
 		if (time <= 0) {
 			return;
 		}
 		try {
 			Thread.sleep(time);
+			logger.info("Pause " + time + " ms");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
