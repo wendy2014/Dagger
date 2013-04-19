@@ -32,7 +32,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.Reporter;
+
 import com.thoughtworks.selenium.Wait;
 
 /**
@@ -439,6 +442,31 @@ public class BrowserEmulator {
 		String png = LogTools.screenShot(this);
 		String log = notice + " >> capture screenshot at " + png;
 		logger.error(log);
+		if (GlobalSettings.baseStorageUrl.lastIndexOf("/") == GlobalSettings.baseStorageUrl.length()) {
+			GlobalSettings.baseStorageUrl = GlobalSettings.baseStorageUrl.substring(0, GlobalSettings.baseStorageUrl.length() - 1);
+		}
+		Reporter.log(log + "<br/><img src=\"" + GlobalSettings.baseStorageUrl + "/" + png + "\" />");
 		Assert.fail(log);
+	}
+	
+	/**
+	 * Return text from specified web element.
+	 * @param xpath
+	 * @return
+	 */
+	public String getText(String xpath) {
+		WebElement element = this.getBrowserCore().findElement(By.xpath(xpath)); 
+		return element.getText();
+	}
+	
+	/**
+	 * Select an option by visible text from &lt;select&gt; web element.
+	 * @param xpath
+	 * @param option
+	 */
+	public void select(String xpath, String option) {
+		WebElement element = this.browserCore.findElement(By.xpath(xpath));
+		Select select = new Select(element);
+		select.selectByVisibleText(option);
 	}
 }
