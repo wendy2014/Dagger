@@ -21,7 +21,7 @@
 	<target name="compile">
 		<delete dir="bin" />
 		<mkdir dir="bin" />
-		<javac destdir="bin" classpathref="cpath" srcdir="src" debug="true" encoding="UTF8">
+		<javac source="1.6" target="1.6" compiler="org.eclipse.jdt.core.JDTCompilerAdapter" destdir="bin" classpathref="cpath" srcdir="src" debug="true" encoding="UTF8">
 		</javac>
 		<copy file="src/log4j.properties" tofile="bin/log4j.properties" />
 	</target>
