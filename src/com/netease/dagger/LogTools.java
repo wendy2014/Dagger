@@ -61,7 +61,8 @@ public class LogTools {
 			return "Failed to screenshot";
 		}
 
-		return screenShotPath;
+		// Convert '\' into '/' for web image browsing.
+		return screenShotPath.replace("\\", "/");
 	}
 
 }
