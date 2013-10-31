@@ -1,0 +1,9 @@
+digraph "src/com/netease/dagger" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_805ee39591da7ad06ca0022f120e4b6e {
+    graph [ bgcolor="#ddddee", pencolor="black", label="netease" fontname="Helvetica", fontsize="10", URL="dir_805ee39591da7ad06ca0022f120e4b6e.html"]
+  dir_6b6b923f91f1039004e124f70978c591 [shape=box, label="dagger", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6b6b923f91f1039004e124f70978c591.html"];
+  }
+}
