@@ -1,0 +1,13 @@
+digraph "src/com/netease" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_541eb0a6c58a7690acc5b848a4b1b724 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="com" fontname="Helvetica", fontsize="10", URL="dir_541eb0a6c58a7690acc5b848a4b1b724.html"]
+  subgraph clusterdir_805ee39591da7ad06ca0022f120e4b6e {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_805ee39591da7ad06ca0022f120e4b6e.html"];
+    dir_805ee39591da7ad06ca0022f120e4b6e [shape=plaintext label="netease"];
+    dir_6b6b923f91f1039004e124f70978c591 [shape=box label="dagger" color="black" fillcolor="white" style="filled" URL="dir_6b6b923f91f1039004e124f70978c591.html"];
+  }
+  }
+}
