@@ -12,7 +12,7 @@ import com.netease.dagger.BrowserEmulator;
  */
 public class CommonFunction {
 
-	public static String ip = "192.168.145.247";
+	public static String ip = "10.240.156.4";
 	public static String port = "3001";
 
 	/**

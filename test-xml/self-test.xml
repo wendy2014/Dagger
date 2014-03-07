@@ -48,6 +48,12 @@
 			<class name="com.netease.test.TypeOperations" />
 		</classes>
 	</test>
+	
+	<test name="TestSimpleFlexApp" junit="false" annotations="JDK">
+		<classes>
+			<class name="com.netease.demo.TestSimpleFlexApp" />
+		</classes>
+	</test>
 
 
 </suite>

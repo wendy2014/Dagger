@@ -63,7 +63,6 @@ public class ExcelDataProvider implements Iterator<Object[]> {
         }
     }
 
-    @Override
     public boolean hasNext() {
 
         if (this.rowNum == 0 || this.currentRowNo >= this.rowNum) {
@@ -82,7 +81,6 @@ public class ExcelDataProvider implements Iterator<Object[]> {
         }
     }
 
-    @Override
     public Object[] next() {
 
         Cell[] c = sheet.getRow(this.currentRowNo);
@@ -109,7 +107,6 @@ public class ExcelDataProvider implements Iterator<Object[]> {
         return object;
     }
 
-    @Override
     public void remove() {
         throw new UnsupportedOperationException("remove unsupported.");
     }
