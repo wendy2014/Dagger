@@ -69,7 +69,7 @@ public class CommonFunction {
 	public static void clickButton(BrowserEmulator be) {
 		be.click("//input[@value='点击button，触发Ajax']");
 		be.expectElementExistOrNot(true, "//h1[(text()='点击了button，触发了Ajax')]",
-				5000);
+				10000);
 	}
 
 	/**
@@ -127,7 +127,7 @@ public class CommonFunction {
 	public static void typeInInput(BrowserEmulator be, String input) {
 		be.type("//input[@value='在<input>输入文本']", input);
 		be.click("//input[@value='提交<input>节点文本']");
-		be.expectElementExistOrNot(true, "//h1[text()='" + input + "']", 5000);
+		be.expectElementExistOrNot(true, "//h1[text()='" + input + "']", 10000);
 		be.open("http://" + ip + ":" + port + "/type");
 	}
 
