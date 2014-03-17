@@ -1,4 +1,4 @@
-## Dagger - a light, robust Web UI autotest framework
+﻿## Dagger - a light, robust Web UI autotest framework
 
 Dagger is a light, robust Web UI autotest framework based on [Selenium](http://seleniumhq.org/) and [TestNG](http://testng.org/doc/index.html).（中文介绍参见[这里](https://github.com/NetEase/Dagger/wiki/Dagger)）
 
@@ -16,19 +16,16 @@ Dagger is a light, robust Web UI autotest framework based on [Selenium](http://s
 
 ## Features
 
-* Easy to learn while only less than 20 APIs altogether, see [this](http://netease.github.com/Dagger/classcom_1_1netease_1_1dagger_1_1_browser_emulator.html).
+* Easy to learn while only less than 30 APIs altogether, see [this](http://netease.github.com/Dagger/classcom_1_1netease_1_1dagger_1_1_browser_emulator.html).
 * High speed with parallel mode which is indeed TestNG's feature, see [this](https://github.com/NetEase/Dagger/wiki/Parallel-Mode)
-* High stability with a trick on TestNG to retry failed/skipped testcases automatically, see [this](https://github.com/NetEase/Dagger/wiki/Retry-Failed-Or-Skipped-Testcases).
+* Re-run failed test cases using [Arrow](https://github.com/NetEase/arrow), see [this](https://github.com/NetEase/Dagger/wiki/Retry-Failed-Testcases-using-Arrow).
 * Use Chrome as default browser which is much quicker and more stable than all Firefox, IE and Safari. 
 * Firefox, IE and Safari are also supported.
 * Capture screenshot automatically when testcase fails.
 * Support data-driven testing.
 * Contrast images and compare differences by crawling page elements and screenshots on the pixel level.
+* Support Flash automation testing.
 
-
-## Coming Soon
-
-* Integration with Flex/Flash automation.
 
 ## How to Use
 
@@ -39,11 +36,11 @@ Already have an autotest framework? Please build Dagger into a .jar file before 
 *  Enter the root directory
 *  Run `mvn clean package -DskipTests` in terminal
 
-Then fetch `dagger-1.2.jar` under `target` folder, or just [download](https://github.com/NetEase/Dagger/releases/download/v1.2/dagger-1.2.jar) the `dagger-1.2.jar`. See [this](https://github.com/NetEase/Dagger/wiki/FAQ) for more details.
+Then fetch `dagger-1.3.jar` under `target` folder, or just [download](https://github.com/NetEase/Dagger/releases/download/v1.3/dagger-1.3.jar) the `dagger-1.3.jar`. See [this](https://github.com/NetEase/Dagger/wiki/FAQ) for more details.
 
-Currently, we use `selenium-server-standalone-2.37.0.jar` and `selenium-safari-driver-2.37.0.jar` , you can change the configuration in the _pom.xml_.
+Currently, we use `selenium-server-standalone-2.39.0.jar` and `selenium-safari-driver-2.39.0.jar` , you can change the configuration in the _pom.xml_.
 
-By the way, you should download the [chromedriver_for_win_2.3.exe](http://chromedriver.storage.googleapis.com/2.3/chromedriver_win32.zip) and [iedriver_win32_2.37.0.exe](http://selenium.googlecode.com/files/IEDriverServer_Win32_2.37.0.zip) if necessary. We suggest to put the .exe files in the `res` folder. 
+By the way, you should download the [chromedriver_for_win_2.3.exe](http://chromedriver.storage.googleapis.com/2.3/chromedriver_win32.zip) and [iedriver_win32_2.39.0.exe](http://selenium.googlecode.com/files/IEDriverServer_Win32_2.39.0.zip) if necessary. We suggest to put the .exe files in the `res` folder. 
 
 ## Contributors
 
@@ -71,7 +68,7 @@ Meanwhile you'd better follow the rules below
 
 (The Apache License)
 
-Copyright (c) 2012-2013 NetEase, Inc. and other contributors
+Copyright (c) 2012-2014 NetEase, Inc. and other contributors
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
