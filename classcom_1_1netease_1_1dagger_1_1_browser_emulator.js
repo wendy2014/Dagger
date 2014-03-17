@@ -1,5 +1,6 @@
 var classcom_1_1netease_1_1dagger_1_1_browser_emulator =
 [
+    [ "BrowserEmulator", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#a5a95fe2879e9802c6ffe15af1ab1556d", null ],
     [ "click", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#ac03b8474826c2f2692a680add658f80f", null ],
     [ "enterFrame", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#a101247eb45899d2817b36c66e2e6271b", null ],
     [ "expectElementExistOrNot", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#af2007c3fcccd07945eade6dbe52330af", null ],
@@ -8,6 +9,7 @@ var classcom_1_1netease_1_1dagger_1_1_browser_emulator =
     [ "getBrowserCore", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#a466b77fa1e1bb023f5165527e74d2748", null ],
     [ "getJavaScriptExecutor", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#a06196b3c751baa2c9dd2251f4d843211", null ],
     [ "getText", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#a8a08f4a696662b8f88ccc5361975729c", null ],
+    [ "inputKeyboard", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#af6d9924bda0e4747f64551f306f98192", null ],
     [ "isElementPresent", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#a97a32aa1e2997af43f24369ff1bd74fb", null ],
     [ "isTextPresent", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#aa25a4cce815d797edf9a53f26391893c", null ],
     [ "leaveFrame", "classcom_1_1netease_1_1dagger_1_1_browser_emulator.html#ae4ae5d264ea041af3abf4154667c4758", null ],
