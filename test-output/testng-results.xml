@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="46677" started-at="2014-06-06T10:40:33Z" finished-at="2014-06-06T10:41:20Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="46677" started-at="2014-06-06T10:40:33Z" finished-at="2014-06-06T10:41:20Z">
+      <class name="com.fmb.pagetest.DemoTest1">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.fmb.pagetest.DemoTest1@19baf0b]" name="beforeClass" is-config="true" duration-ms="2134" started-at="2014-06-06T18:40:33Z" finished-at="2014-06-06T18:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:com.fmb.pagetest.DemoTest1@19baf0b]" name="Login" duration-ms="17212" started-at="2014-06-06T18:40:35Z" finished-at="2014-06-06T18:40:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="opentaohuoxiuchang()[pri:0, instance:com.fmb.pagetest.DemoTest1@19baf0b]" name="opentaohuoxiuchang" duration-ms="9321" started-at="2014-06-06T18:40:52Z" depends-on-methods="com.fmb.pagetest.DemoTest1.Login" finished-at="2014-06-06T18:41:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opentaohuoxiuchang -->
+        <test-method status="FAIL" signature="createTopic()[pri:0, instance:com.fmb.pagetest.DemoTest1@19baf0b]" name="createTopic" duration-ms="17995" started-at="2014-06-06T18:41:02Z" depends-on-methods="com.fmb.pagetest.DemoTest1.opentaohuoxiuchang" finished-at="2014-06-06T18:41:20Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at com.fmb.datadriver.ExcelUtils.getCellData(ExcelUtils.java:80)
+	at com.fmb.pagetest.DemoTest1.createTopic(DemoTest1.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTopic -->
+      </class> <!-- com.fmb.pagetest.DemoTest1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

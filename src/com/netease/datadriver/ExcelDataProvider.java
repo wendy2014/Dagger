@@ -51,7 +51,7 @@ public class ExcelDataProvider implements Iterator<Object[]> {
             Cell[] cell = sheet.getRow(0);
             columnNum = cell.length;
             columnnName = new String[cell.length];
-
+  
             for (int i = 0; i < cell.length; i++) {
                 columnnName[i] = cell[i].getContents().toString();
             }

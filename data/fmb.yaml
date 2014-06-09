@@ -1,0 +1,64 @@
+fmb_login_url:
+  type:String
+  value: "http://bj.fumubang.net/"
+fmb_login_btn:
+  type: xpath
+  value: "//li[@class='login_none']/a"
+fmb_login_iframe:
+  type: xpath
+  value: "//iframe[contains(@src,'http://passport.fumubang.net')]"
+fmb_login_email:
+  type: xpath
+  value: "//input[@id='email']"
+fmb_login_password:
+  type: xpath
+  value: "//input[@id='password']"
+fmb_login_submit:
+  type: xpath
+  value: "//button[@id='loginBtn']"
+fmb_shequ:
+  type: xpath
+  value: "//a[@class='zs_sq']"
+fmb_shequ_taohuoxq:
+  type: xpath
+  value: "//a[@title='淘货秀场']"
+fmb_shequ_jiaruquanzi:
+  type: xpath
+  value: "//a[@class='join_group jrqz']"
+fmb_shequ_tcquanzi:
+  type: xpath
+  value: "//a[@class='tcqz']"
+fmb_shequ_createtopicbtn:
+  type: xpath
+  value: "//a[@class='n_txt create_topic_btn']"
+fmb_shequ_createtopic_title:
+  type: xpath
+  value: "//input[@id='group_title']"
+fmb_shequ_createtopic_body_iframe:
+  type: xpath
+  value: "//iframe[@id='ueditor_0']"
+fmb_shequ_createtopic_body:
+  type: xpath
+  value: "//body"
+fmb_shequ_createtopic_submit:
+  type: xpath
+  value: "//a[@id='post_btn']"
+fmb_shequ_createtopic_tcbox:
+  type: xpath
+  value: "//a[@class='tc_a closeDialog']"
+fmb_shequ_deletopic:
+  type: xpath
+  value: "//a[@id='topic_del']"
+fmb_shequ_deletopic_confirm:
+  type: xpath
+  value: "//a[@class='tc_a confirmBtn']"
+fmb_shequ_deletopic_cancel:
+  type: xpath
+  value: "//a[@class='tc_aa closeDialog']"
+  
+  
+  
+  
+  
+  
+  

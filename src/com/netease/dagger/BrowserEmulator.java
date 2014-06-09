@@ -57,7 +57,7 @@ public class BrowserEmulator {
 
 	public BrowserEmulator() {
 		setupBrowserCoreType(GlobalSettings.browserCoreType);
-		browser = new WebDriverBackedSelenium(browserCore, "http://www.163.com/");
+		browser = new WebDriverBackedSelenium(browserCore, "http://bj.fumubang.net/");
 		javaScriptExecutor = (JavascriptExecutor) browserCore;
 		logger.info("Started BrowserEmulator");
 	}
