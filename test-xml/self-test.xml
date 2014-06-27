@@ -4,7 +4,7 @@
 	
 	<test name="LoginTest" junit="false" annotations="JDK">
 		<classes>
-			<class name="com.fmb.pagetest.LoginTest" />
+			<class name="com.fmb.pagetest.DemoTest1" />
 		</classes>
 	</test>
 

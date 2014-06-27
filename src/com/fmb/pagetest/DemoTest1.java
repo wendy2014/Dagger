@@ -42,7 +42,7 @@ public class DemoTest1
 	 {
 		 be.selectWindow("淘货秀场-父母邦亲子社区");
 		 CommonFun.clickCreateTopicBtn(be);
-		 ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "creatTopic");
+		 ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "createTopic");
 		 CommonFun.typeCreateTopic(be, ExcelUtils.getCellData(1, 1), ExcelUtils.getCellData(1, 2));
 		 CommonFun.clickConfirmTcbox(be);
 		 CommonFun.clickDeleTopic(be);
