@@ -1,87 +1,73 @@
-2014-06-27 17:40:35 [TestNG]-[INFO] Using Chrome
-2014-06-27 17:40:40 [TestNG]-[INFO] Started BrowserEmulator
-2014-06-27 17:40:40 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:40:46 [TestNG]-[INFO] Opened url http://bj.fumubang.net/
-2014-06-27 17:40:47 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:40:47 [TestNG]-[INFO] Found element //li[@class='login_none']/a
-2014-06-27 17:40:47 [TestNG]-[INFO] Found desired element //li[@class='login_none']/a
-2014-06-27 17:40:48 [TestNG]-[INFO] Clicked //li[@class='login_none']/a
-2014-06-27 17:40:52 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:40:52 [TestNG]-[INFO] Entered iframe //iframe[contains(@src,'http://passport.fumubang.net')]
-2014-06-27 17:40:53 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:40:53 [TestNG]-[INFO] Found element //input[@id='email']
-2014-06-27 17:40:53 [TestNG]-[INFO] Found desired element //input[@id='email']
-2014-06-27 17:40:53 [TestNG]-[INFO] Type 123@11.cn at //input[@id='email']
-2014-06-27 17:40:53 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:40:53 [TestNG]-[INFO] Found element //input[@id='password']
-2014-06-27 17:40:53 [TestNG]-[INFO] Found desired element //input[@id='password']
-2014-06-27 17:40:53 [TestNG]-[INFO] Type 123456 at //input[@id='password']
-2014-06-27 17:40:54 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:40:54 [TestNG]-[INFO] Found element //button[@id='loginBtn']
-2014-06-27 17:40:54 [TestNG]-[INFO] Found desired element //button[@id='loginBtn']
-2014-06-27 17:40:58 [TestNG]-[INFO] Clicked //button[@id='loginBtn']
-2014-06-27 17:41:03 [TestNG]-[INFO] Pause 5000 ms
-2014-06-27 17:41:03 [TestNG]-[INFO] Not found element//iframe[contains(@src,'http://passport.fumubang.net')]login button')]
-2014-06-27 17:41:03 [TestNG]-[INFO] Not found undesired element //iframe[contains(@src,'http://passport.fumubang.net')]login button')]
-2014-06-27 17:41:03 [TestNG]-[INFO] Pause 500 ms
-2014-06-27 17:41:03 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:04 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:04 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:05 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:05 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:06 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:06 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:07 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:07 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:08 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:08 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:09 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:09 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:10 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:10 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:11 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:11 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:12 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:12 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:13 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:13 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:14 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:14 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:15 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:15 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:16 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:16 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:17 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:17 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:18 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:19 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:19 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:20 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:20 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:21 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:21 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:22 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:22 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:23 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:23 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:24 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:24 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:25 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:25 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:26 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:26 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:27 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:27 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:28 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:28 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:29 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:29 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:30 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:30 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:31 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:31 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:32 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:32 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:33 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:33 [TestNG]-[INFO] Not found element//a[@class='zs_sq']
-2014-06-27 17:41:34 [TestNG]-[ERROR] Failed to find element //a[@class='zs_sq'] >> capture screenshot at Failed to screenshot
+2014-07-09 15:51:23 [TestNG]-[INFO] Using Chrome
+2014-07-09 15:51:24 [TestNG]-[INFO] Started BrowserEmulator
+2014-07-09 15:51:24 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:32 [TestNG]-[INFO] Opened url http://bj.fumubang.net/
+2014-07-09 15:51:32 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:32 [TestNG]-[INFO] Found element //li[@class='login_none']/a
+2014-07-09 15:51:32 [TestNG]-[INFO] Found desired element //li[@class='login_none']/a
+2014-07-09 15:51:33 [TestNG]-[INFO] Clicked //li[@class='login_none']/a
+2014-07-09 15:51:34 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:34 [TestNG]-[INFO] Entered iframe //iframe[contains(@src,'http://passport.fumubang.net')]
+2014-07-09 15:51:34 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:35 [TestNG]-[INFO] Found element //input[@id='email']
+2014-07-09 15:51:35 [TestNG]-[INFO] Found desired element //input[@id='email']
+2014-07-09 15:51:35 [TestNG]-[INFO] Type 123@11.cn at //input[@id='email']
+2014-07-09 15:51:35 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:35 [TestNG]-[INFO] Found element //input[@id='password']
+2014-07-09 15:51:35 [TestNG]-[INFO] Found desired element //input[@id='password']
+2014-07-09 15:51:35 [TestNG]-[INFO] Type 123456 at //input[@id='password']
+2014-07-09 15:51:36 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:36 [TestNG]-[INFO] Found element //button[@id='loginBtn']
+2014-07-09 15:51:36 [TestNG]-[INFO] Found desired element //button[@id='loginBtn']
+2014-07-09 15:51:37 [TestNG]-[INFO] Clicked //button[@id='loginBtn']
+2014-07-09 15:51:42 [TestNG]-[INFO] Pause 5000 ms
+2014-07-09 15:51:42 [TestNG]-[INFO] Not found element//iframe[contains(@src,'http://passport.fumubang.net')]login button')]
+2014-07-09 15:51:42 [TestNG]-[INFO] Not found undesired element //iframe[contains(@src,'http://passport.fumubang.net')]login button')]
+2014-07-09 15:51:42 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:42 [TestNG]-[INFO] Found element //a[@class='zs_sq']
+2014-07-09 15:51:42 [TestNG]-[INFO] Found desired element //a[@class='zs_sq']
+2014-07-09 15:51:51 [TestNG]-[INFO] Clicked //a[@class='zs_sq']
+2014-07-09 15:51:51 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:51 [TestNG]-[INFO] Found element //a[@title='淘货秀场']
+2014-07-09 15:51:51 [TestNG]-[INFO] Found desired element //a[@title='淘货秀场']
+2014-07-09 15:51:51 [TestNG]-[INFO] Clicked //a[@title='淘货秀场']
+2014-07-09 15:51:52 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:51:55 [TestNG]-[INFO] Switched to window 淘货秀场-父母邦亲子社区
+2014-07-09 15:52:00 [TestNG]-[INFO] Pause 5000 ms
+2014-07-09 15:52:00 [TestNG]-[INFO] Not found element//a[@class='join_group jrqz']
+2014-07-09 15:52:05 [TestNG]-[INFO] Pause 5000 ms
+2014-07-09 15:52:05 [TestNG]-[INFO] Found element //a[@class='tcqz']
+2014-07-09 15:52:05 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:05 [TestNG]-[INFO] Found element //a[@class='n_txt create_topic_btn']
+2014-07-09 15:52:05 [TestNG]-[INFO] Found desired element //a[@class='n_txt create_topic_btn']
+2014-07-09 15:52:06 [TestNG]-[INFO] Clicked //a[@class='n_txt create_topic_btn']
+2014-07-09 15:52:07 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:07 [TestNG]-[INFO] Found element //input[@id='group_title']
+2014-07-09 15:52:07 [TestNG]-[INFO] Found desired element //input[@id='group_title']
+2014-07-09 15:52:07 [TestNG]-[INFO] Type test title at //input[@id='group_title']
+2014-07-09 15:52:07 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:07 [TestNG]-[INFO] Entered iframe //iframe[@id='ueditor_0']
+2014-07-09 15:52:08 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:08 [TestNG]-[INFO] Found element //body
+2014-07-09 15:52:08 [TestNG]-[INFO] Found desired element //body
+2014-07-09 15:52:08 [TestNG]-[INFO] Type test body at //body
+2014-07-09 15:52:08 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:08 [TestNG]-[INFO] Left the iframe
+2014-07-09 15:52:09 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:09 [TestNG]-[INFO] Found element //a[@id='post_btn']
+2014-07-09 15:52:09 [TestNG]-[INFO] Found desired element //a[@id='post_btn']
+2014-07-09 15:52:10 [TestNG]-[INFO] Clicked //a[@id='post_btn']
+2014-07-09 15:52:11 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:11 [TestNG]-[INFO] Found element //a[@class='tc_a closeDialog']
+2014-07-09 15:52:11 [TestNG]-[INFO] Found desired element //a[@class='tc_a closeDialog']
+2014-07-09 15:52:11 [TestNG]-[INFO] Clicked //a[@class='tc_a closeDialog']
+2014-07-09 15:52:11 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:13 [TestNG]-[INFO] Found element //a[@id='topic_del']
+2014-07-09 15:52:13 [TestNG]-[INFO] Found desired element //a[@id='topic_del']
+2014-07-09 15:52:13 [TestNG]-[INFO] Clicked //a[@id='topic_del']
+2014-07-09 15:52:14 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:14 [TestNG]-[INFO] Found element //a[@class='tc_a confirmBtn']
+2014-07-09 15:52:14 [TestNG]-[INFO] Found desired element //a[@class='tc_a confirmBtn']
+2014-07-09 15:52:17 [TestNG]-[INFO] Clicked //a[@class='tc_a confirmBtn']
+2014-07-09 15:52:18 [TestNG]-[INFO] Pause 500 ms
+2014-07-09 15:52:19 [TestNG]-[INFO] Quitted BrowserEmulator

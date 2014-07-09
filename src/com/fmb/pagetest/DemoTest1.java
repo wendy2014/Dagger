@@ -49,5 +49,10 @@ public class DemoTest1
 		 CommonFun.clickDeleTopicconfirm(be);
 		 
 	 }
+	 @Test(dependsOnMethods="createTopic")
+	 public void quit()
+	 {
+		 be.quit();
+	 }
 
 }
