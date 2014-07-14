@@ -140,12 +140,12 @@
 				    <properties>
 						<property>
 							<name>usedefaultlisteners</name>
-							<value>false</value>
+							<value>true</value>
 						</property>
 					</properties>
 					<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
-						<suiteXmlFile>${basedir}/test-xml/self-test.xml</suiteXmlFile>
+						<suiteXmlFile>${basedir}/test-xml/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

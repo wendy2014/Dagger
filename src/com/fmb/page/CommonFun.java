@@ -2,7 +2,7 @@ package com.fmb.page;
 
 import com.fmb.common.BrowserEmulator;
 import com.fmb.common.GetYamlFileConfig;
-import com.fmb.page.Login;
+//import com.fmb.page.Login;
 
 public class CommonFun
 {

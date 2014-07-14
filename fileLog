@@ -1,73 +1,73 @@
-2014-07-09 15:51:23 [TestNG]-[INFO] Using Chrome
-2014-07-09 15:51:24 [TestNG]-[INFO] Started BrowserEmulator
-2014-07-09 15:51:24 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:32 [TestNG]-[INFO] Opened url http://bj.fumubang.net/
-2014-07-09 15:51:32 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:32 [TestNG]-[INFO] Found element //li[@class='login_none']/a
-2014-07-09 15:51:32 [TestNG]-[INFO] Found desired element //li[@class='login_none']/a
-2014-07-09 15:51:33 [TestNG]-[INFO] Clicked //li[@class='login_none']/a
-2014-07-09 15:51:34 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:34 [TestNG]-[INFO] Entered iframe //iframe[contains(@src,'http://passport.fumubang.net')]
-2014-07-09 15:51:34 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:35 [TestNG]-[INFO] Found element //input[@id='email']
-2014-07-09 15:51:35 [TestNG]-[INFO] Found desired element //input[@id='email']
-2014-07-09 15:51:35 [TestNG]-[INFO] Type 123@11.cn at //input[@id='email']
-2014-07-09 15:51:35 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:35 [TestNG]-[INFO] Found element //input[@id='password']
-2014-07-09 15:51:35 [TestNG]-[INFO] Found desired element //input[@id='password']
-2014-07-09 15:51:35 [TestNG]-[INFO] Type 123456 at //input[@id='password']
-2014-07-09 15:51:36 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:36 [TestNG]-[INFO] Found element //button[@id='loginBtn']
-2014-07-09 15:51:36 [TestNG]-[INFO] Found desired element //button[@id='loginBtn']
-2014-07-09 15:51:37 [TestNG]-[INFO] Clicked //button[@id='loginBtn']
-2014-07-09 15:51:42 [TestNG]-[INFO] Pause 5000 ms
-2014-07-09 15:51:42 [TestNG]-[INFO] Not found element//iframe[contains(@src,'http://passport.fumubang.net')]login button')]
-2014-07-09 15:51:42 [TestNG]-[INFO] Not found undesired element //iframe[contains(@src,'http://passport.fumubang.net')]login button')]
-2014-07-09 15:51:42 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:42 [TestNG]-[INFO] Found element //a[@class='zs_sq']
-2014-07-09 15:51:42 [TestNG]-[INFO] Found desired element //a[@class='zs_sq']
-2014-07-09 15:51:51 [TestNG]-[INFO] Clicked //a[@class='zs_sq']
-2014-07-09 15:51:51 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:51 [TestNG]-[INFO] Found element //a[@title='淘货秀场']
-2014-07-09 15:51:51 [TestNG]-[INFO] Found desired element //a[@title='淘货秀场']
-2014-07-09 15:51:51 [TestNG]-[INFO] Clicked //a[@title='淘货秀场']
-2014-07-09 15:51:52 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:51:55 [TestNG]-[INFO] Switched to window 淘货秀场-父母邦亲子社区
-2014-07-09 15:52:00 [TestNG]-[INFO] Pause 5000 ms
-2014-07-09 15:52:00 [TestNG]-[INFO] Not found element//a[@class='join_group jrqz']
-2014-07-09 15:52:05 [TestNG]-[INFO] Pause 5000 ms
-2014-07-09 15:52:05 [TestNG]-[INFO] Found element //a[@class='tcqz']
-2014-07-09 15:52:05 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:05 [TestNG]-[INFO] Found element //a[@class='n_txt create_topic_btn']
-2014-07-09 15:52:05 [TestNG]-[INFO] Found desired element //a[@class='n_txt create_topic_btn']
-2014-07-09 15:52:06 [TestNG]-[INFO] Clicked //a[@class='n_txt create_topic_btn']
-2014-07-09 15:52:07 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:07 [TestNG]-[INFO] Found element //input[@id='group_title']
-2014-07-09 15:52:07 [TestNG]-[INFO] Found desired element //input[@id='group_title']
-2014-07-09 15:52:07 [TestNG]-[INFO] Type test title at //input[@id='group_title']
-2014-07-09 15:52:07 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:07 [TestNG]-[INFO] Entered iframe //iframe[@id='ueditor_0']
-2014-07-09 15:52:08 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:08 [TestNG]-[INFO] Found element //body
-2014-07-09 15:52:08 [TestNG]-[INFO] Found desired element //body
-2014-07-09 15:52:08 [TestNG]-[INFO] Type test body at //body
-2014-07-09 15:52:08 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:08 [TestNG]-[INFO] Left the iframe
-2014-07-09 15:52:09 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:09 [TestNG]-[INFO] Found element //a[@id='post_btn']
-2014-07-09 15:52:09 [TestNG]-[INFO] Found desired element //a[@id='post_btn']
-2014-07-09 15:52:10 [TestNG]-[INFO] Clicked //a[@id='post_btn']
-2014-07-09 15:52:11 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:11 [TestNG]-[INFO] Found element //a[@class='tc_a closeDialog']
-2014-07-09 15:52:11 [TestNG]-[INFO] Found desired element //a[@class='tc_a closeDialog']
-2014-07-09 15:52:11 [TestNG]-[INFO] Clicked //a[@class='tc_a closeDialog']
-2014-07-09 15:52:11 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:13 [TestNG]-[INFO] Found element //a[@id='topic_del']
-2014-07-09 15:52:13 [TestNG]-[INFO] Found desired element //a[@id='topic_del']
-2014-07-09 15:52:13 [TestNG]-[INFO] Clicked //a[@id='topic_del']
-2014-07-09 15:52:14 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:14 [TestNG]-[INFO] Found element //a[@class='tc_a confirmBtn']
-2014-07-09 15:52:14 [TestNG]-[INFO] Found desired element //a[@class='tc_a confirmBtn']
-2014-07-09 15:52:17 [TestNG]-[INFO] Clicked //a[@class='tc_a confirmBtn']
-2014-07-09 15:52:18 [TestNG]-[INFO] Pause 500 ms
-2014-07-09 15:52:19 [TestNG]-[INFO] Quitted BrowserEmulator
+2014-07-10 18:37:37 [main]-[INFO] Using Chrome
+2014-07-10 18:37:37 [main]-[INFO] Started BrowserEmulator
+2014-07-10 18:37:37 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:45 [main]-[INFO] Opened url http://bj.fumubang.net/
+2014-07-10 18:37:46 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:46 [main]-[INFO] Found element //li[@class='login_none']/a
+2014-07-10 18:37:46 [main]-[INFO] Found desired element //li[@class='login_none']/a
+2014-07-10 18:37:46 [main]-[INFO] Clicked //li[@class='login_none']/a
+2014-07-10 18:37:47 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:47 [main]-[INFO] Entered iframe //iframe[contains(@src,'http://passport.fumubang.net')]
+2014-07-10 18:37:48 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:48 [main]-[INFO] Found element //input[@id='email']
+2014-07-10 18:37:48 [main]-[INFO] Found desired element //input[@id='email']
+2014-07-10 18:37:48 [main]-[INFO] Type 123@11.cn at //input[@id='email']
+2014-07-10 18:37:48 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:48 [main]-[INFO] Found element //input[@id='password']
+2014-07-10 18:37:48 [main]-[INFO] Found desired element //input[@id='password']
+2014-07-10 18:37:48 [main]-[INFO] Type 123456 at //input[@id='password']
+2014-07-10 18:37:49 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:49 [main]-[INFO] Found element //button[@id='loginBtn']
+2014-07-10 18:37:49 [main]-[INFO] Found desired element //button[@id='loginBtn']
+2014-07-10 18:37:50 [main]-[INFO] Clicked //button[@id='loginBtn']
+2014-07-10 18:37:55 [main]-[INFO] Pause 5000 ms
+2014-07-10 18:37:55 [main]-[INFO] Not found element//iframe[contains(@src,'http://passport.fumubang.net')]login button')]
+2014-07-10 18:37:55 [main]-[INFO] Not found undesired element //iframe[contains(@src,'http://passport.fumubang.net')]login button')]
+2014-07-10 18:37:56 [main]-[INFO] Pause 500 ms
+2014-07-10 18:37:56 [main]-[INFO] Found element //a[@class='zs_sq']
+2014-07-10 18:37:56 [main]-[INFO] Found desired element //a[@class='zs_sq']
+2014-07-10 18:38:04 [main]-[INFO] Clicked //a[@class='zs_sq']
+2014-07-10 18:38:04 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:04 [main]-[INFO] Found element //a[@title='淘货秀场']
+2014-07-10 18:38:04 [main]-[INFO] Found desired element //a[@title='淘货秀场']
+2014-07-10 18:38:04 [main]-[INFO] Clicked //a[@title='淘货秀场']
+2014-07-10 18:38:05 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:11 [main]-[INFO] Switched to window 淘货秀场-父母邦亲子社区
+2014-07-10 18:38:16 [main]-[INFO] Pause 5000 ms
+2014-07-10 18:38:16 [main]-[INFO] Not found element//a[@class='join_group jrqz']
+2014-07-10 18:38:21 [main]-[INFO] Pause 5000 ms
+2014-07-10 18:38:21 [main]-[INFO] Found element //a[@class='tcqz']
+2014-07-10 18:38:22 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:22 [main]-[INFO] Found element //a[@class='n_txt create_topic_btn']
+2014-07-10 18:38:22 [main]-[INFO] Found desired element //a[@class='n_txt create_topic_btn']
+2014-07-10 18:38:22 [main]-[INFO] Clicked //a[@class='n_txt create_topic_btn']
+2014-07-10 18:38:23 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:23 [main]-[INFO] Found element //input[@id='group_title']
+2014-07-10 18:38:23 [main]-[INFO] Found desired element //input[@id='group_title']
+2014-07-10 18:38:23 [main]-[INFO] Type test title at //input[@id='group_title']
+2014-07-10 18:38:23 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:23 [main]-[INFO] Entered iframe //iframe[@id='ueditor_0']
+2014-07-10 18:38:24 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:24 [main]-[INFO] Found element //body
+2014-07-10 18:38:24 [main]-[INFO] Found desired element //body
+2014-07-10 18:38:24 [main]-[INFO] Type test body at //body
+2014-07-10 18:38:25 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:25 [main]-[INFO] Left the iframe
+2014-07-10 18:38:25 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:25 [main]-[INFO] Found element //a[@id='post_btn']
+2014-07-10 18:38:25 [main]-[INFO] Found desired element //a[@id='post_btn']
+2014-07-10 18:38:26 [main]-[INFO] Clicked //a[@id='post_btn']
+2014-07-10 18:38:27 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:27 [main]-[INFO] Found element //a[@class='tc_a closeDialog']
+2014-07-10 18:38:27 [main]-[INFO] Found desired element //a[@class='tc_a closeDialog']
+2014-07-10 18:38:27 [main]-[INFO] Clicked //a[@class='tc_a closeDialog']
+2014-07-10 18:38:28 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:31 [main]-[INFO] Found element //a[@id='topic_del']
+2014-07-10 18:38:31 [main]-[INFO] Found desired element //a[@id='topic_del']
+2014-07-10 18:38:31 [main]-[INFO] Clicked //a[@id='topic_del']
+2014-07-10 18:38:32 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:32 [main]-[INFO] Found element //a[@class='tc_a confirmBtn']
+2014-07-10 18:38:32 [main]-[INFO] Found desired element //a[@class='tc_a confirmBtn']
+2014-07-10 18:38:45 [main]-[INFO] Clicked //a[@class='tc_a confirmBtn']
+2014-07-10 18:38:45 [main]-[INFO] Pause 500 ms
+2014-07-10 18:38:46 [main]-[INFO] Quitted BrowserEmulator
