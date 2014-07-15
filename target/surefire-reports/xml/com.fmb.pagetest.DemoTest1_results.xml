@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="55.828">
+  <properties />
+  
+  
+            <testcase name="opentaohuoxiuchang" time="8.816" classname="com.fmb.pagetest.DemoTest1" />
+                <testcase name="createTopic" time="27.341" classname="com.fmb.pagetest.DemoTest1" />
+                <testcase name="quit" time="1.761" classname="com.fmb.pagetest.DemoTest1" />
+                <testcase name="Login" time="17.910" classname="com.fmb.pagetest.DemoTest1" />
+      
+</testsuite>
