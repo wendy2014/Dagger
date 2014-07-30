@@ -1,12 +1,12 @@
 fmb_login_url:
   type:String
-  value: "http://bj.fumubang.net/"
+  value: "http://bj.fumubang.com/"
 fmb_login_btn:
   type: xpath
   value: "//li[@class='login_none']/a"
 fmb_login_iframe:
   type: xpath
-  value: "//iframe[contains(@src,'http://passport.fumubang.net')]"
+  value: "//iframe[contains(@src,'http://passport.fumubang.com')]"
 fmb_login_email:
   type: xpath
   value: "//input[@id='email']"
@@ -55,6 +55,63 @@ fmb_shequ_deletopic_confirm:
 fmb_shequ_deletopic_cancel:
   type: xpath
   value: "//a[@class='tc_aa closeDialog']"
+fmb_test_url:
+  type: String
+  value: "http://www.fumubang.com/h61743.html"
+fmb_select_ticket:
+  type: xpath
+  value: "//dd[@class='J_sle_price']/a"
+fmb_buy:
+  type: xpath
+  value: "//a[@class='sc-btn fr rad5 J_sub']"
+fmb_submit_order:
+  type: xpath
+  value: "//a[@id='create_submit']"
+fmb_pay_order:
+  type: xpath
+  value: "//a[@id='confirmSubmit']"
+fmb_cancel_order:
+  type: xpath
+  value: "//a[@class='c_999 J_cancel']"
+fmb_cancel_order_reason:
+  type: xpath
+  value: "//textarea[@class='my_brief J_mess']"
+fmb_cancel_confirm:
+  type: xpath
+  value: "//a[@class='tc_a confirmBtn']"
+fmb_order_id:
+  type: xpath
+  value: "//table[@class='tb-void my-cart-box']/tbody/tr[1]/th[1]/span[2]"
+fmb_order_should_pay_sum:
+  type: xpath
+  value: "//ul[@class='fr f-14']/li[4]/span[3]"
+fmb_order_alipay_order_id:
+  type: xpath
+  value: "//div[@class='commodity-message-row']/span[1]"
+fmb_order_alipay_pay_sum:
+  type: xpath
+  value: "//span[@id='J_basePriceArea']/strong"
+fmb_pay_yinlian:
+  type: xpath
+  value: "//input[@value='yinlian']"
+fmb_order_yinlian_order_id:
+  type: xpath
+  value: "//p[@class='order_num']"
+fmb_order_yinlian_pay_sum:
+  type: xpath
+  value: "//em[@class='order_money']"
+fmb_myorder_url:
+  type: String
+  value: "http://www.fumubang.com/usercenter/index/my_order"
+fmb_myorder_payorder:
+  type: xpath
+  value: "//a[contains(@href,'http://www.fumubang.com/payment')]"
+fmb_cart:
+  type: xpath
+  value: "//a[@href='http://www.fumubang.com/carts']"
+  
+  
+  
   
   
   

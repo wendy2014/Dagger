@@ -31,21 +31,24 @@ public class Login
 		be.expectElementExistOrNot(false, yamlconf.getYamlValue("fmb_login_iframe") + "login button" +"')]", 5000);
 		
 	}
-	public static boolean verifyLogin(BrowserEmulator be, String expect) throws Exception
-	{
-		String actual;
-		actual = be.getText("//label[@style='']");
-		System.out.println(actual);
-		if(expect.equals(actual))
-		{
-			ExcelUtils.setCellData("Pass", 1, 4);
-			return true;
-		}
-		else 
-		{
-			ExcelUtils.setCellData("Failed" + "expect is: " + expect + ", actual is: " + actual, 1, 4);
-			return false;
-		}
-	}
+	/*
+	 * 判断是否登录成功
+	 */
+//	public static boolean verifyLogin(BrowserEmulator be, String expect) throws Exception
+//	{
+//		String actual;
+//		actual = be.getText("//label[@style='']");
+//		System.out.println(actual);
+//		if(expect.equals(actual))
+//		{
+//			ExcelUtils.setCellData("Pass", 1, 4);
+//			return true;
+//		}
+//		else 
+//		{
+//			ExcelUtils.setCellData("Failed" + "expect is: " + expect + ", actual is: " + actual, 1, 4);
+//			return false;
+//		}
+//	}
 
 }

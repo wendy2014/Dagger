@@ -517,4 +517,12 @@ public class BrowserEmulator {
 	{
 		return browserCore.getTitle();
 	}
+	/*
+	 * 
+	 */
+	public void maxBrowser() {
+		pause(stepInterval);
+		browserCore.manage().window().maximize();
+		logger.info("Maximized");
+	}
 }
