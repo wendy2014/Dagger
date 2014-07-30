@@ -315,3 +315,80 @@
 2014-07-30 14:43:02 [main]-[INFO] Refreshed
 2014-07-30 14:43:03 [main]-[INFO] Pause 500 ms
 2014-07-30 14:43:04 [main]-[INFO] Quitted BrowserEmulator
+2014-07-30 18:18:17 [main]-[INFO] Using Chrome
+2014-07-30 18:18:18 [main]-[INFO] Started BrowserEmulator
+2014-07-30 18:18:18 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:27 [main]-[INFO] Opened url http://bj.fumubang.com/
+2014-07-30 18:18:27 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:27 [main]-[INFO] Found element //li[@class='login_none']/a
+2014-07-30 18:18:27 [main]-[INFO] Found desired element //li[@class='login_none']/a
+2014-07-30 18:18:27 [main]-[INFO] Clicked //li[@class='login_none']/a
+2014-07-30 18:18:29 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:29 [main]-[INFO] Entered iframe //iframe[contains(@src,'http://passport.fumubang.com')]
+2014-07-30 18:18:29 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:29 [main]-[INFO] Found element //input[@id='email']
+2014-07-30 18:18:29 [main]-[INFO] Found desired element //input[@id='email']
+2014-07-30 18:18:29 [main]-[INFO] Type 123@11.cn at //input[@id='email']
+2014-07-30 18:18:30 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:30 [main]-[INFO] Found element //input[@id='password']
+2014-07-30 18:18:30 [main]-[INFO] Found desired element //input[@id='password']
+2014-07-30 18:18:30 [main]-[INFO] Type 123456 at //input[@id='password']
+2014-07-30 18:18:30 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:30 [main]-[INFO] Found element //button[@id='loginBtn']
+2014-07-30 18:18:30 [main]-[INFO] Found desired element //button[@id='loginBtn']
+2014-07-30 18:18:32 [main]-[INFO] Clicked //button[@id='loginBtn']
+2014-07-30 18:18:37 [main]-[INFO] Pause 5000 ms
+2014-07-30 18:18:37 [main]-[INFO] Not found element//iframe[contains(@src,'http://passport.fumubang.com')]login button')]
+2014-07-30 18:18:37 [main]-[INFO] Not found undesired element //iframe[contains(@src,'http://passport.fumubang.com')]login button')]
+2014-07-30 18:18:37 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:41 [main]-[INFO] Opened url http://www.fumubang.com/h61743.html
+2014-07-30 18:18:41 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:41 [main]-[INFO] Maximized
+2014-07-30 18:18:45 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:45 [main]-[INFO] Found element //dd[@class='J_sle_price']/a
+2014-07-30 18:18:45 [main]-[INFO] Found desired element //dd[@class='J_sle_price']/a
+2014-07-30 18:18:45 [main]-[INFO] Clicked //dd[@class='J_sle_price']/a
+2014-07-30 18:18:48 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:48 [main]-[INFO] Found element //a[@class='sc-btn fr rad5 J_sub']
+2014-07-30 18:18:48 [main]-[INFO] Found desired element //a[@class='sc-btn fr rad5 J_sub']
+2014-07-30 18:18:50 [main]-[INFO] Clicked //a[@class='sc-btn fr rad5 J_sub']
+2014-07-30 18:18:53 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:53 [main]-[INFO] Found element //a[@id='create_submit']
+2014-07-30 18:18:53 [main]-[INFO] Found desired element //a[@id='create_submit']
+2014-07-30 18:18:54 [main]-[INFO] Clicked //a[@id='create_submit']
+2014-07-30 18:18:57 [main]-[INFO] Pause 500 ms
+2014-07-30 18:18:57 [main]-[INFO] Found element //a[@id='confirmSubmit']
+2014-07-30 18:18:57 [main]-[INFO] Found desired element //a[@id='confirmSubmit']
+2014-07-30 18:19:01 [main]-[INFO] Clicked //a[@id='confirmSubmit']
+2014-07-30 18:19:02 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:02 [main]-[INFO] Opened url http://www.fumubang.com/usercenter/index/my_order
+2014-07-30 18:19:03 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:03 [main]-[INFO] Found element //a[contains(@href,'http://www.fumubang.com/payment')]
+2014-07-30 18:19:03 [main]-[INFO] Found desired element //a[contains(@href,'http://www.fumubang.com/payment')]
+2014-07-30 18:19:03 [main]-[INFO] Clicked //a[contains(@href,'http://www.fumubang.com/payment')]
+2014-07-30 18:19:04 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:04 [main]-[INFO] Found element //input[@value='yinlian']
+2014-07-30 18:19:04 [main]-[INFO] Found desired element //input[@value='yinlian']
+2014-07-30 18:19:04 [main]-[INFO] Clicked //input[@value='yinlian']
+2014-07-30 18:19:05 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:05 [main]-[INFO] Found element //a[@id='confirmSubmit']
+2014-07-30 18:19:05 [main]-[INFO] Found desired element //a[@id='confirmSubmit']
+2014-07-30 18:19:07 [main]-[INFO] Clicked //a[@id='confirmSubmit']
+2014-07-30 18:19:07 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:08 [main]-[INFO] Opened url http://www.fumubang.com/usercenter/index/my_order
+2014-07-30 18:19:11 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:11 [main]-[INFO] Found element //a[@class='c_999 J_cancel']
+2014-07-30 18:19:11 [main]-[INFO] Found desired element //a[@class='c_999 J_cancel']
+2014-07-30 18:19:11 [main]-[INFO] Clicked //a[@class='c_999 J_cancel']
+2014-07-30 18:19:12 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:12 [main]-[INFO] Found element //textarea[@class='my_brief J_mess']
+2014-07-30 18:19:12 [main]-[INFO] Found desired element //textarea[@class='my_brief J_mess']
+2014-07-30 18:19:12 [main]-[INFO] Type 测试用订单取消 at //textarea[@class='my_brief J_mess']
+2014-07-30 18:19:13 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:13 [main]-[INFO] Found element //a[@class='tc_a confirmBtn']
+2014-07-30 18:19:13 [main]-[INFO] Found desired element //a[@class='tc_a confirmBtn']
+2014-07-30 18:19:13 [main]-[INFO] Clicked //a[@class='tc_a confirmBtn']
+2014-07-30 18:19:16 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:17 [main]-[INFO] Refreshed
+2014-07-30 18:19:17 [main]-[INFO] Pause 500 ms
+2014-07-30 18:19:19 [main]-[INFO] Quitted BrowserEmulator
