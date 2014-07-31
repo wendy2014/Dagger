@@ -12,17 +12,6 @@
 		<BrowserCoreType>2</BrowserCoreType>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>arrow-mvn-repo</id>
-			<url>https://raw.github.com/Netease/arrow/mvn-repo/</url>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-			</snapshots>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		
 		<dependency>
