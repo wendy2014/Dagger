@@ -109,6 +109,26 @@ fmb_myorder_payorder:
 fmb_cart:
   type: xpath
   value: "//a[@href='http://www.fumubang.com/carts']"
+
+
+fmb_shequ_school_url:
+  type: String
+  value: "http://www.fumubang.com/g172/"
+fmb_shequ_reply_topic_btn:
+  type: xpath
+  value: "//a[@class='htz']"
+fmb_shequ_reply_topic_frame:
+  type: xpath
+  value: "//iframe[@id='ueditor_0']"
+fmb_shequ_reply_topic_content:
+  type: xpath
+  value: "//body"
+fmb_shequ_reply_topic_confirm_btn:
+  type: xpath
+  value: "//a[@class='rea_t reply_btn']"
+fmb_shequ_:
+  type: xpath
+  value: 
   
   
   

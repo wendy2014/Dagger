@@ -13,6 +13,7 @@ public class Login
 		yamlconf = new GetYamlFileConfig();
 		url = yamlconf.getYamlValue("fmb_login_url");
 		be.open(url);
+		be.maxBrowser();
 	}
 	public static void clickLoginButton(BrowserEmulator be)
 	{

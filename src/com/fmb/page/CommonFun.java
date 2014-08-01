@@ -2,20 +2,26 @@ package com.fmb.page;
 
 import com.fmb.common.BrowserEmulator;
 import com.fmb.common.GetYamlFileConfig;
+import com.fmb.common.LogTools;
 //import com.fmb.page.Login;
 
 public class CommonFun
 {
 	static GetYamlFileConfig yamlconf;
-	public static void clickSheQu(BrowserEmulator be)
+	public static void openFmbSchool(BrowserEmulator be)
 	{
 		yamlconf = new GetYamlFileConfig();
+		be.open(yamlconf.getYamlValue("fmb_shequ_school_url"));
+	}
+	public static void clickSheQu(BrowserEmulator be)
+	{
 		be.click(yamlconf.getYamlValue("fmb_shequ"));
 	}
 	public static void clickXiuChang(BrowserEmulator be)
 	{
 		be.click(yamlconf.getYamlValue("fmb_shequ_taohuoxq"));
 	}
+	
 	/*
 	 * 判断如果未加入圈子，就先加入圈子然后点击发帖，如果已加入圈子就直接点击发帖
 	 */
@@ -65,6 +71,25 @@ public class CommonFun
 	{
 		be.click(yamlconf.getYamlValue("fmb_shequ_deletopic_cancel"));
 	}
-	
+	/*
+	 * 回复帖子
+	 */
+	public static void replyTopic(BrowserEmulator be, String text) throws InterruptedException
+	{
+		be.click(yamlconf.getYamlValue("fmb_shequ_reply_topic_btn"));
+		be.enterFrame(yamlconf.getYamlValue("fmb_shequ_reply_topic_frame"));
+		be.type(yamlconf.getYamlValue("fmb_shequ_reply_topic_content"), text);
+		be.leaveFrame();
+		be.click(yamlconf.getYamlValue("fmb_shequ_reply_topic_confirm_btn"));
+		Thread.sleep(3000);
+		LogTools.screenShot(be);
+	}
+	/*
+	 * 退出圈子
+	 */
+	public static void quitQuanZi(BrowserEmulator be)
+	{
+		be.click(yamlconf.getYamlValue("fmb_shequ_tcquanzi"));
+	}
 
 }
