@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.fmb.pagetest.TopicTest"/>
+      <class name="com.fmb.pagetest.PayTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
