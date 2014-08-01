@@ -35,7 +35,7 @@ public class PayTest
 		Pay.payOrderAlipay(be);
 	}
 	@Test(dependsOnMethods="payAlipay")
-	public void payYinlian()
+	public void payYinlian() throws InterruptedException
 	{
 		Pay.openMyOrderPage(be);
 		Pay.payOrderYinlian(be);
