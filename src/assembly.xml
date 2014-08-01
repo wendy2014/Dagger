@@ -8,7 +8,7 @@
   <fileSets>
     <fileSet>
       <directory>/target/surefire-reports/html</directory>
-      <outputDirectory>/bin</outputDirectory>
+      <outputDirectory>/target/publish-report</outputDirectory>
       <includes>
         <include>*</include>
       </includes>

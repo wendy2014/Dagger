@@ -4,6 +4,7 @@ import org.testng.Assert;
 
 import com.fmb.common.BrowserEmulator;
 import com.fmb.common.GetYamlFileConfig;
+import com.fmb.common.LogTools;
 
 public class Pay 
 {
@@ -41,6 +42,7 @@ public class Pay
 //		System.out.println(ordersum);
 		
 		be.click(yamlconf.getYamlValue("fmb_pay_order"));   //点击立即支付
+		LogTools.screenShot(be);            //截取支付宝当前页面
 		orderid_alipay = be.getText(yamlconf.getYamlValue("fmb_order_alipay_order_id"));  //支付宝页面获取到的订单id
 		ordersum_alipay = be.getText(yamlconf.getYamlValue("fmb_order_alipay_pay_sum"));  //支付宝页面获取到的订单金额
 //		System.out.println(orderid);
@@ -53,6 +55,7 @@ public class Pay
 		be.click(yamlconf.getYamlValue("fmb_myorder_payorder"));     //我的订单页面点击去支付按钮
 		be.click(yamlconf.getYamlValue("fmb_pay_yinlian"));          //选择银联支付
 		be.click(yamlconf.getYamlValue("fmb_pay_order"));           //点击立即支付按钮
+		LogTools.screenShot(be);             //截取银联当前页面
 		orderid_yinlian = be.getText(yamlconf.getYamlValue("fmb_order_yinlian_order_id"));    //银联页面获取到的订单id
 		orderid_yinlian = orderid_yinlian.substring(5);                               
 		ordersum_yinlian = be.getText(yamlconf.getYamlValue("fmb_order_yinlian_pay_sum"));  //银联页面获取到的订单金额
@@ -66,6 +69,7 @@ public class Pay
 	}
 	public static void cancelOrder(BrowserEmulator be, String cancelreason)
 	{
+		LogTools.screenShot(be);          //截取到我的订单列表当前页面
 		be.click(yamlconf.getYamlValue("fmb_cancel_order"));
 //		be.click("//tbody[@data-id=orderid]/tr[3]/td[@class='trade-operate']/a[@class='c_999 J_cancel']"); //定位失败
 		be.type(yamlconf.getYamlValue("fmb_cancel_order_reason"), cancelreason);

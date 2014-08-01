@@ -29,7 +29,7 @@ import org.openqa.selenium.remote.Augmenter;
 
 /**
  * Log Tools
- * @author ChenKan
+ * @author 
  */
 public class LogTools {
 
@@ -38,7 +38,8 @@ public class LogTools {
 	}
 
 	public static String screenShot(BrowserEmulator be) {
-		String dir = "screenshot"; // TODO
+//		String dir = "screenshot"; // TODO
+		String dir = "target/publish-report";     //重新定义存放screenshot路径
 		String time = new SimpleDateFormat("yyyyMMdd-HHmmss").format(new Date());
 		String screenShotPath = dir + File.separator + time + ".png";
 
