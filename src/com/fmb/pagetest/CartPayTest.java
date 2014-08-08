@@ -1,6 +1,7 @@
 package com.fmb.pagetest;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -62,6 +63,11 @@ public class CartPayTest
 		Pay.cancelOrder(be, ExcelUtils.getCellData(1, 1));
 		Thread.sleep(3000);
 		be.refresh();
+	}
+	@AfterClass
+	public void quit()
+	{
+		be.quit();
 	}
 
 }
