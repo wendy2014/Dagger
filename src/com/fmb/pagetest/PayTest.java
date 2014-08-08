@@ -30,7 +30,14 @@ public class PayTest
 	@Test(dependsOnMethods="Login")
 	public void payAlipay() throws InterruptedException
 	{
-		Pay.openTestUrl(be);
+//		CommonFun.openTuanUrl(be);
+//		CommonFun.clickFirstActiveUrl(be);        //景点票活动图片太多的话，定位元素超时
+//		be.implicitlyWait();
+//		CommonFun.clickActivePage(be);
+		
+		CommonFun.openTestJingDianUrl(be);        //景点票为测试用的屏蔽活动
+		CartPay.selectJingDianTicketDate(be);
+		Pay.clickBuyNow(be);
 		Pay.submitOrder(be);
 		Pay.payOrderAlipay(be);
 	}
@@ -38,6 +45,7 @@ public class PayTest
 	public void payYinlian() throws InterruptedException
 	{
 		Pay.openMyOrderPage(be);
+		Pay.clickMyOrderPayBtn(be);
 		Pay.payOrderYinlian(be);
 	}
 	@Test(dependsOnMethods="payYinlian")

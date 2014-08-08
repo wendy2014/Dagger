@@ -19,8 +19,11 @@ package com.fmb.common;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.util.Arrays;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 import java.io.File;
 import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -524,5 +527,35 @@ public class BrowserEmulator {
 		pause(stepInterval);
 		browserCore.manage().window().maximize();
 		logger.info("Maximized");
+	}
+	/*
+	 * 切换到新窗口句柄,与上边的selectWindow效果一样
+	 */
+	public void switchToWindow(String windowTitle)
+	{
+		Set<String> windowHandles = browserCore.getWindowHandles();
+		for(String handler : windowHandles)
+		{
+			browserCore.switchTo().window(handler);
+			String title = browserCore.getTitle();
+			if(windowTitle.equals(title))
+			{
+				break;
+			}
+		}
+	}
+	/*
+	 * 获取到元素节点的属性值
+	 */
+	public String getAttribute(String xpath, String attribute)
+	{
+		return browserCore.findElement(By.xpath(xpath)).getAttribute(attribute);
+	}
+	/*
+	 * 设置隐形等待
+	 */
+	public void implicitlyWait()
+	{
+		browserCore.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
 }

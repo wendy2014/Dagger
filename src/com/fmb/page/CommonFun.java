@@ -3,14 +3,69 @@ package com.fmb.page;
 import com.fmb.common.BrowserEmulator;
 import com.fmb.common.GetYamlFileConfig;
 import com.fmb.common.LogTools;
-//import com.fmb.page.Login;
 
 public class CommonFun
 {
-	static GetYamlFileConfig yamlconf;
+	public static String tuangou_url;
+	static String first_active_title;
+	static GetYamlFileConfig yamlconf = new GetYamlFileConfig();
+	/*
+	 * 打开景点票电子票活动页面
+	 */
+	public static void openTestJingDianUrl(BrowserEmulator be)
+	{
+		be.open(yamlconf.getYamlValue("fmb_test_jingdian_dianzi_url"));
+	}
+	/*
+	 * 打开演出票电子票活动页面
+	 */
+	public static void openTestUYanchuUrl(BrowserEmulator be)
+	{
+		be.open(yamlconf.getYamlValue("fmb_test_yanchu_dianzi_url"));
+	}
+	/*
+	 * 打开通用票实体票活动页面
+	 */
+	public static void openTestTongyongUrl(BrowserEmulator be)
+	{
+		be.open(yamlconf.getYamlValue("fmb_test_tongyong_shiti_url"));
+	}
+	/*
+	 * 打开团购列表页面url
+	 */
+	public static void openTuanUrl(BrowserEmulator be)
+	{
+		tuangou_url = yamlconf.getYamlValue("fmb_tuangou_url");
+		be.open(tuangou_url);
+		be.maxBrowser();
+	}
+	/*
+	 * 点击团购列表页面第一个活动链接
+	 */
+	public static void clickFirstActiveUrl(BrowserEmulator be)
+	{
+		be.click(yamlconf.getYamlValue("fmb_tuan_first_active"));
+		first_active_title = be.getAttribute(yamlconf.getYamlValue("fmb_tuan_first_active"),"title");
+		first_active_title = first_active_title + "-父母邦亲子活动";
+	}
+	/*
+	 * 判断是哪种类型的活动
+	 */
+	public static void clickActivePage(BrowserEmulator be) throws InterruptedException
+	{
+		be.switchToWindow(first_active_title);
+		Thread.sleep(3000);
+		if(be.isElementPresent(yamlconf.getYamlValue("fmb_test_jingdian_ticket_date_Btn"), 3000))
+		{
+			CartPay.selectJingDianTicketDate(be);
+		}
+		else if(be.isElementPresent(yamlconf.getYamlValue("fmb_select_ticket"), 3000))
+		{
+			CartPay.selectYanChuTicketType(be);
+		}
+	}
 	public static void openFmbSchool(BrowserEmulator be)
 	{
-		yamlconf = new GetYamlFileConfig();
 		be.open(yamlconf.getYamlValue("fmb_shequ_school_url"));
 	}
 	public static void clickSheQu(BrowserEmulator be)
@@ -91,5 +146,6 @@ public class CommonFun
 	{
 		be.click(yamlconf.getYamlValue("fmb_shequ_tcquanzi"));
 	}
+	
 
 }
