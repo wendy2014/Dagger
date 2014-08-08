@@ -55,15 +55,20 @@ fmb_shequ_deletopic_confirm:
 fmb_shequ_deletopic_cancel:
   type: xpath
   value: "//a[@class='tc_aa closeDialog']"
-fmb_test_url:
+fmb_tuangou_url:
   type: String
-  value: "http://www.fumubang.com/h61743.html"
+  value: "http://bj.fumubang.com/tuan"
 fmb_select_ticket:
   type: xpath
   value: "//dd[@class='J_sle_price']/a"
 fmb_buy:
   type: xpath
   value: "//a[@class='sc-btn fr rad5 J_sub']"
+fmb_join_cart:
+  type: xpath
+  value: "//a[@class='apply_sub fr ml20 sc-add']"
+  
+  
 fmb_submit_order:
   type: xpath
   value: "//a[@id='create_submit']"
@@ -106,9 +111,6 @@ fmb_myorder_url:
 fmb_myorder_payorder:
   type: xpath
   value: "//a[contains(@href,'http://www.fumubang.com/payment')]"
-fmb_cart:
-  type: xpath
-  value: "//a[@href='http://www.fumubang.com/carts']"
 
 
 fmb_shequ_school_url:
@@ -126,11 +128,87 @@ fmb_shequ_reply_topic_content:
 fmb_shequ_reply_topic_confirm_btn:
   type: xpath
   value: "//a[@class='rea_t reply_btn']"
-fmb_shequ_:
+  
+  
+fmb_test_jingdian_dianzi_url:
+  type: String
+  value: "http://www.fumubang.com/h62285.html?admin_show=1"
+fmb_test_yanchu_dianzi_url:
+  type: String
+  value: "http://www.fumubang.com/h61501.html?admin_show=1"
+fmb_test_tongyong_shiti_url:
+  type: String
+  value: "http://www.fumubang.com/h62286.html?admin_show=1"
+fmb_test_jingdian_ticket_date_Btn:
+  type: xpath
+  value: "//dd[@class='J_sle_price dt_rela']/input"
+fmb_test_jingdian_ticket_date:
+  type: xpath
+  value: "//em[@class='calendar_price']"
+fmb_test_jingdian_ticket_num:
+  type: xpath
+  value: "//a[@class='cnt_pls']"
+fmb_test_jingdian_ticket_type:
+  type: xpath
+  value: "//a[@class='dira xz_succ fir_succ']"
+
+
+fmb_continue_shop_Btn:
+  type: xpath
+  value: "//a[@class='apply_sub continueshop']"
+fmb_go_to_shopcart:
+  type: xpath
+  value: "//a[@class='sc-btn ml20 goshopcart']"
+fmb_cart:
+  type: xpath
+  value: "//a[@href='http://www.fumubang.com/carts']"
+fmb_cart_num:
+  type: xpath
+  value: "//span[@class='carts_number']"
+fmb_buy_num:
+  type: xpath
+  value: "//input[@class='J_amount']"
+fmb_test_active_title:
+  type: xpath
+  value: "//div[@class='act_detai_recou fl']/h2"
+fmb_test_money_sum:
+  type: xpath
+  value: "//span[@class='sc-totle f80']"
+  
+  
+fmb_cartpage_active_title:
+  type: xpath
+  value: "//div[@class='my-name-txt']/a"
+fmb_cartpage_active_ticket_type:
+  type: xpath
+  value: "//div[@class='my-name-txt']/p[1]"
+fmb_cartpage_money_sum:
+  type: xpath
+  value: "//span[@class='totalprice']"
+  
+  
+fmb_cartpage_goto_pay:
+  type: xpath
+  value: "//a[@id='form_submit']"
+fmb_confirmorder_active_title:
+  type: xpath
+  value: "//div[@class='my-name-txt']/a"
+fmb_confirmorder_active_ticket_type:
+  type: xpath
+  value: "//div[@class='my-name-txt']/p[1]"
+fmb_confirmorder_money_sum:
+  type: xpath
+  value: "//span[@class='J_price']"
+fmb_tuan_first_active:
+  type: xpath
+  value: "//ul[@class='activ_demo_con clearfix deallist']/li/a"
+fmb_tuan_first_active_title:
+  type: xpath
+  value: "//"
+fmb_test_:
   type: xpath
   value: 
-  
-  
+
   
   
   
