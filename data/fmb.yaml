@@ -61,6 +61,10 @@ fmb_tuangou_url:
 fmb_select_ticket:
   type: xpath
   value: "//dd[@class='J_sle_price']/a"
+fmb_test_yanchu_ticket_type:
+  type: xpath
+  value: "//span[@class='J_unit_name']"
+
 fmb_buy:
   type: xpath
   value: "//a[@class='sc-btn fr rad5 J_sub']"
@@ -202,12 +206,12 @@ fmb_confirmorder_money_sum:
 fmb_tuan_first_active:
   type: xpath
   value: "//ul[@class='activ_demo_con clearfix deallist']/li/a"
-fmb_tuan_first_active_title:
+fmb_test_tongyong_ticket_property1:
   type: xpath
-  value: "//"
-fmb_test_:
+  value: "//a[@class='dira xz_succ fir_succ']"
+fmb_test_tongyong_ticket_property2:
   type: xpath
-  value: 
+  value: "//dd[@class='J_sle_price']/a"
 fmb_test_:
   type: xpath
   value: 

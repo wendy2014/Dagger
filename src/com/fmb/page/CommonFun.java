@@ -19,7 +19,7 @@ public class CommonFun
 	/*
 	 * 打开演出票电子票活动页面
 	 */
-	public static void openTestUYanchuUrl(BrowserEmulator be)
+	public static void openTestYanchuUrl(BrowserEmulator be)
 	{
 		be.open(yamlconf.getYamlValue("fmb_test_yanchu_dianzi_url"));
 	}

@@ -30,7 +30,10 @@ public class CartPayTest
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Login");
 		Login.typeInIframe(be, ExcelUtils.getCellData(1, 1), ExcelUtils.getCellData(1, 2));
 	}
-	@Test(dependsOnMethods="Login")
+	/*
+	 * 景点票加入购物车下订单支付流程
+	 */
+	@Test(groups="joinJingDianTicket", dependsOnMethods="Login")
 	public void joinJingDianTicket() throws InterruptedException
 	{
 		CommonFun.openTestJingDianUrl(be);
@@ -43,7 +46,7 @@ public class CartPayTest
 		CartPay.getCartPageContent(be);
 		CartPay.assertJingDianContent();
 	}
-	@Test(dependsOnMethods="joinJingDianTicket")
+	@Test(groups="joinJingDianTicket",dependsOnMethods="joinJingDianTicket")
 	public void payJingDianTicket() throws InterruptedException
 	{
 		CartPay.getCartPageContent(be);
@@ -54,7 +57,7 @@ public class CartPayTest
 		Pay.submitOrder(be);
 		Pay.payOrderAlipay(be);
 	}
-	@Test(dependsOnMethods="payJingDianTicket")
+	@Test(groups="joinJingDianTicket",dependsOnMethods="payJingDianTicket")
 	public void cancelOrder() throws Exception
 	{
 		Pay.openMyOrderPage(be);
@@ -63,6 +66,58 @@ public class CartPayTest
 		Pay.cancelOrder(be, ExcelUtils.getCellData(1, 1));
 		Thread.sleep(3000);
 		be.refresh();
+	}
+	/*
+	 * 演出票加入购物车下订单支付流程
+	 */
+	@Test(groups="joinYanChuTicket" , dependsOnGroups="joinJingDianTicket")
+	public void joinYanChuTicket() throws InterruptedException
+	{
+		CommonFun.openTestYanchuUrl(be);
+		Thread.sleep(3000);
+		CartPay.selectYanChuTicketType(be);
+		CartPay.selectNumPls(be);
+		CartPay.getYanChuPageContent(be);
+		CartPay.clickJoinCart(be);
+		CartPay.clickGoToCart(be);
+		CartPay.getCartPageContent(be);
+		CartPay.assertYanChuContent();
+	}
+	@Test(groups="joinYanChuTicket" , dependsOnGroups="joinJingDianTicket", dependsOnMethods="joinYanChuTicket")
+	public void payYanChuTicket() throws InterruptedException
+	{
+		this.payJingDianTicket();
+	}
+	@Test(groups="joinYanChuTicket" , dependsOnGroups="joinJingDianTicket", dependsOnMethods="payYanChuTicket")
+	public void cancelYanChuOrder() throws Exception
+	{
+		this.cancelOrder();
+	}
+	/*
+	 * 通用票加入购物车下订单支付流程，money_sum为小计的金额，没有加入邮费
+	 */
+	@Test(groups="joinTongYongTicket" , dependsOnGroups="joinYanChuTicket")
+	public void joinTongYongTicket() throws InterruptedException
+	{
+		CommonFun.openTestTongyongUrl(be);
+		Thread.sleep(3000);
+		CartPay.selectTongYongTicketType(be);
+		CartPay.selectNumPls(be);
+		CartPay.getTongYongPageContent(be);
+		CartPay.clickJoinCart(be);
+		CartPay.clickGoToCart(be);
+		CartPay.getCartPageContent(be);
+		CartPay.assertTongYongContent();
+	}
+	@Test(groups="joinTongYongTicket" , dependsOnGroups="joinYanChuTicket", dependsOnMethods="joinTongYongTicket")
+	public void payTongYongTicket() throws InterruptedException
+	{
+		this.payJingDianTicket();
+	}
+	@Test(groups="joinTongYongTicket" , dependsOnGroups="joinYanChuTicket", dependsOnMethods="payTongYongTicket")
+	public void cancelTongYongOrder() throws Exception
+	{
+		this.cancelOrder();
 	}
 	@AfterClass
 	public void quit()
