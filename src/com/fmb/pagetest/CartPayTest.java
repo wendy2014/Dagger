@@ -1,6 +1,5 @@
 package com.fmb.pagetest;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -33,9 +32,12 @@ public class CartPayTest
 	/*
 	 * 景点票加入购物车下订单支付流程
 	 */
+	
 	@Test(groups="joinJingDianTicket", dependsOnMethods="Login")
 	public void joinJingDianTicket() throws InterruptedException
 	{
+		CartPay.clickCartBtn(be);
+		CartPay.clearCarts(be);
 		CommonFun.openTestJingDianUrl(be);
 		Thread.sleep(3000);
 		CartPay.selectJingDianTicketDate(be);
@@ -63,7 +65,7 @@ public class CartPayTest
 		Pay.openMyOrderPage(be);
 		Thread.sleep(3000);
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "cancelOrder");
-		Pay.cancelOrder(be, ExcelUtils.getCellData(1, 1));
+		Pay.cancelOrders(be, ExcelUtils.getCellData(1, 1));
 		Thread.sleep(3000);
 		be.refresh();
 	}
@@ -116,6 +118,52 @@ public class CartPayTest
 	}
 	@Test(groups="joinTongYongTicket" , dependsOnGroups="joinYanChuTicket", dependsOnMethods="payTongYongTicket")
 	public void cancelTongYongOrder() throws Exception
+	{
+		this.cancelOrder();
+	}
+	
+	/*
+	 * 将以上三个票种合为一个test
+	 */
+	@Test(groups="AllTickets", dependsOnGroups="joinTongYongTicket")
+	public void joinAllTickets() throws InterruptedException
+	{
+		CartPay.clickCartBtn(be);
+		CartPay.clearCarts(be);
+		CommonFun.openTestJingDianUrl(be);
+		Thread.sleep(1000);
+		CartPay.selectJingDianTicketDate(be);
+		CartPay.getJingDianPageContent(be);
+		CartPay.clickJoinCart(be);
+		CartPay.clickContinueShop(be);
+		CommonFun.openTestYanchuUrl(be);
+		Thread.sleep(1000);
+		CartPay.selectYanChuTicketType(be);
+		CartPay.getYanChuPageContent(be);
+		CartPay.clickJoinCart(be);
+		CartPay.clickContinueShop(be);
+		CommonFun.openTestTongyongUrl(be);
+		Thread.sleep(1000);
+		CartPay.selectTongYongTicketType(be);
+		CartPay.getTongYongPageContent(be);
+		CartPay.clickJoinCart(be);
+		CartPay.clickGoToCart(be);
+		CartPay.getCartPageAllContent(be);
+		CartPay.assertCartPageAllContent();
+	}
+	@Test(groups="AllTickets", dependsOnGroups="joinTongYongTicket", dependsOnMethods="joinAllTickets")
+	public void payAllTickets() throws InterruptedException
+	{
+		CartPay.getCartPageAllContent(be);
+		CartPay.clickGoToPay(be);
+		Thread.sleep(1000);
+		Pay.getConfirmOrderAllContent(be);
+		Pay.assertConfirmOrderAllContent();
+		Pay.submitOrder(be);
+		Pay.payOrderAlipay(be);
+	}
+	@Test(groups="AllTickets", dependsOnGroups="joinTongYongTicket", dependsOnMethods="payAllTickets")
+	public void cancelAllTicketsOrder() throws Exception
 	{
 		this.cancelOrder();
 	}

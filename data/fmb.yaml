@@ -189,7 +189,36 @@ fmb_cartpage_active_ticket_type:
 fmb_cartpage_money_sum:
   type: xpath
   value: "//span[@class='totalprice']"
-  
+fmb_cartpage_active_title_1:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/a"
+fmb_cartpage_active_ticket_type_1:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/p[1]"
+fmb_cartpage_money_sum_1:
+  type: xpath
+  value: ".//span[@class='J_price']"
+fmb_cartpage_active_title_2:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/a"
+fmb_cartpage_active_ticket_type_2:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/p[1]"
+fmb_cartpage_money_sum_2:
+  type: xpath
+  value: ".//span[@class='J_price']"
+fmb_cartpage_active_title_3:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/a"
+fmb_cartpage_active_ticket_type_3:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/p[1]"
+fmb_cartpage_money_sum_3:
+  type: xpath
+  value: ".//span[@class='J_price']"
+
+
+
   
 fmb_cartpage_goto_pay:
   type: xpath
@@ -203,6 +232,39 @@ fmb_confirmorder_active_ticket_type:
 fmb_confirmorder_money_sum:
   type: xpath
   value: "//span[@class='J_price']"
+fmb_confirmorder_active_title_jingdian:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/a"
+fmb_confirmorder_active_ticket_type_jingdian:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/p[1]"
+fmb_confirmorder_money_sum_jingdian:
+  type: xpath
+  value: ".//span[@class='J_price']"
+fmb_confirmorder_active_title_yanchu:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/a"
+fmb_confirmorder_active_ticket_type_yanchu:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/p[1]"
+fmb_confirmorder_money_sum_yanchu:
+  type: xpath
+  value: ".//span[@class='J_price']"
+fmb_confirmorder_active_title_tongyong:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/a"
+fmb_confirmorder_active_ticket_type_tongyong:
+  type: xpath
+  value: ".//div[@class='my-name-txt']/p[1]"
+fmb_confirmorder_money_sum_tongyong:
+  type: xpath
+  value: ".//span[@class='J_price']" 
+fmb_confirmorder_money_total:
+  type: xpath
+  value: "//li[@class='clearfix bold mt10 f-16 totlep-coup']/span[@class='itemPrice f80']/span" 
+  
+  
+  
 fmb_tuan_first_active:
   type: xpath
   value: "//ul[@class='activ_demo_con clearfix deallist']/li/a"
@@ -212,15 +274,18 @@ fmb_test_tongyong_ticket_property1:
 fmb_test_tongyong_ticket_property2:
   type: xpath
   value: "//dd[@class='J_sle_price']/a"
-fmb_test_:
+  
+  
+
+fmb_cart_dele_Btn:
   type: xpath
-  value: 
-fmb_test_:
+  value: "//a[@class='my-new-remov']"
+fmb_cart_goto_shop_Btn:
   type: xpath
-  value: 
-fmb_test_:
+  value: "//a[@class='apply_sub']"
+fmb_cart_dele_confirm:
   type: xpath
-  value: 
+  value: "//a[@class='sub_ack ml20 fl']"
 fmb_test_:
   type: xpath
   value: 

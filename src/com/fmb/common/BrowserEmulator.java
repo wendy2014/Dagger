@@ -27,6 +27,7 @@ import java.io.IOException;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriverBackedSelenium;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriverService;
@@ -465,6 +466,19 @@ public class BrowserEmulator {
 			return false;
 		}
 	}
+	public boolean isElementExist(By by)
+	{
+		try 
+		{
+			browserCore.findElement(by);
+			return true;
+		}
+		catch (NoSuchElementException e)
+		{
+//			System.out.println("元素不存在：【" + by.toString()+ "]");
+			return false;
+		}
+	}
 	
 	/**
 	 * Pause
@@ -558,4 +572,31 @@ public class BrowserEmulator {
 	{
 		browserCore.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
+	/*
+	 * 获取到第index个的table
+	 */
+	public WebElement getTable(int index)
+	{
+		WebElement element = null;
+		if(this.isElementExist(By.tagName("table")))
+		{
+			element = browserCore.findElements(By.tagName("table")).get(index);
+		}
+		return element;
+	}
+	/*
+	 * 获取到相应table下的cell元素
+	 */
+	public String getTableCellText(int index, String xpath)
+	{
+		return this.getTable(index).findElement(By.xpath(xpath)).getText();
+	}
+	/*
+	 * 获取某个满足条件(xpath)的元素个数
+	 */
+	public int getSize(String xpath)
+	{
+		return browserCore.findElements(By.xpath(xpath)).size();
+	}
+	
 }
