@@ -15,7 +15,10 @@
  *
  */
 package com.fmb.common;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;

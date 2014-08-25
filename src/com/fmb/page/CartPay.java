@@ -1,5 +1,8 @@
 package com.fmb.page;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import mx4j.log.Logger;
 
 import org.testng.Assert;

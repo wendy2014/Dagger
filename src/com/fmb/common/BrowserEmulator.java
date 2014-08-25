@@ -15,7 +15,10 @@
  *
  */
 package com.fmb.common;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.util.Arrays;
@@ -26,6 +29,7 @@ import java.io.IOException;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriverBackedSelenium;
@@ -597,6 +601,45 @@ public class BrowserEmulator {
 	public int getSize(String xpath)
 	{
 		return browserCore.findElements(By.xpath(xpath)).size();
+	}
+	/*
+	 * 这个方法可行
+	 */
+	public void addManageCookie(Cookie cookie)
+	{
+		browserCore.manage().addCookie(cookie);
+	}
+	/*
+	 * 得到当前页面下所有cookie，并输出
+	 */
+	public void getCookie()
+	{
+		Set<Cookie> cookies = browserCore.manage().getCookies();
+		for(Cookie c: cookies)
+		{
+			System.out.println(c.getDomain()+", "+c.getName()+", "+c.getValue()+","+c.getExpiry()+", "+c.getPath());
+		}
+		logger.info("get cookie");
+	}
+	
+	public String getCookieByName(String cookiename)
+	{
+		Cookie cookie = browserCore.manage().getCookieNamed(cookiename);
+		return cookie.getValue();
+	}
+	/*
+	 * 删除cookie
+	 */
+	public void deleCookie(String cookiename)
+	{
+		browserCore.manage().deleteCookieNamed(cookiename);
+	}
+	/*
+	 * 删除所有cookies
+	 */
+	public void deleAllCookies()
+	{
+		browserCore.manage().deleteAllCookies();
 	}
 	
 }

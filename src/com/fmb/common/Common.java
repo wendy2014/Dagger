@@ -1,5 +1,8 @@
 package com.fmb.common;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import java.util.Set;
 
 import org.openqa.selenium.By;

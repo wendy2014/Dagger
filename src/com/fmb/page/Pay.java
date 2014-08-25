@@ -1,5 +1,8 @@
 package com.fmb.page;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import org.openqa.selenium.By;
 import org.testng.Assert;
 

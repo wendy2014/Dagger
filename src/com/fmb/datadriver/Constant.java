@@ -1,5 +1,8 @@
 package com.fmb.datadriver;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 public class Constant 
 {
 	public static final String Path_TestData = ".//data//";      //只能用这个相对路径，不能用绝对路径，否则传到服务器上执行会找不到该文件

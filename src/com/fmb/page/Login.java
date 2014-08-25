@@ -1,4 +1,11 @@
 package com.fmb.page;
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
+import java.util.Set;
+
+import org.openqa.selenium.Cookie;
 
 import com.fmb.common.BrowserEmulator;
 import com.fmb.common.GetYamlFileConfig;
@@ -31,6 +38,21 @@ public class Login
 		be.click(yamlconf.getYamlValue("fmb_login_submit"));
 		be.expectElementExistOrNot(false, yamlconf.getYamlValue("fmb_login_iframe") + "login button" +"')]", 5000);
 		
+	}
+	public static void getCookies(BrowserEmulator be)
+	{
+		be.getCookie();
+	}
+	public static String getCookieByName(BrowserEmulator be, String cookiename)
+	{
+		return be.getCookieByName(cookiename);
+	}
+	/*
+	 * 删除所有cookie
+	 */
+	public static void deleCookies(BrowserEmulator be)
+	{
+		be.deleAllCookies();
 	}
 	/*
 	 * 判断是否登录成功

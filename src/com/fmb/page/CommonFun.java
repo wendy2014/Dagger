@@ -1,5 +1,8 @@
 package com.fmb.page;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import com.fmb.common.BrowserEmulator;
 import com.fmb.common.GetYamlFileConfig;
 import com.fmb.common.LogTools;

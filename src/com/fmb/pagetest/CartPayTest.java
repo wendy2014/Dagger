@@ -1,5 +1,8 @@
 package com.fmb.pagetest;
-
+/*
+ * Author: Shuwen
+ * Date:20140821
+ */
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -29,6 +32,16 @@ public class CartPayTest
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "Login");
 		Login.typeInIframe(be, ExcelUtils.getCellData(1, 1), ExcelUtils.getCellData(1, 2));
 	}
+//	@Test
+//	public void Login()
+//	{
+//		Login.openURL(be);
+//		Login.deleCookies(be);
+//		Login.addLoginCookie(be, "fsid", "0dr7kphv04ao84bpnhrj4hcud0");
+//		Login.addLoginCookie(be, "uvuid", "f08ada59180fb860e440e3f89fc19994");
+//		Login.addLoginCookie(be, "_authSe", "fc1c5IrmJRRpJknJkD65Eb%2FkrJa1EoKsb8kpFoTkmUIOKdpOvso");
+//		Login.getCookies(be);
+//	}
 	/*
 	 * 景点票加入购物车下订单支付流程
 	 */
