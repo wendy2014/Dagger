@@ -54,23 +54,23 @@ public class Pay
 	 */
 	public static void getConfirmOrderAllContent(BrowserEmulator be)
 	{
-		confirmpage_active_title_1 = be.getTableCellText(3, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_title_jingdian"));
+		confirmpage_active_title_1 = be.getTableCellText(1, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_title_jingdian"));
 		confirmpage_active_title_1 = confirmpage_active_title_1.trim();
-		confirmpage_ticket_type_1 = be.getTableCellText(3, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_ticket_type_jingdian"));
+		confirmpage_ticket_type_1 = be.getTableCellText(1, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_ticket_type_jingdian"));
 		confirmpage_ticket_type_1 = confirmpage_ticket_type_1.substring(3);
-		confirmpage_money_sum_1 = be.getTableCellText(3, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_sum_jingdian"));
+		confirmpage_money_sum_1 = be.getTableCellText(1, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_sum_jingdian"));
 		
-		confirmpage_active_title_2 = be.getTableCellText(4, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_title_yanchu"));
+		confirmpage_active_title_2 = be.getTableCellText(2, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_title_yanchu"));
 		confirmpage_active_title_2 = confirmpage_active_title_2.trim();
-		confirmpage_ticket_type_2 = be.getTableCellText(4, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_ticket_type_yanchu"));
+		confirmpage_ticket_type_2 = be.getTableCellText(2, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_ticket_type_yanchu"));
 		confirmpage_ticket_type_2 = confirmpage_ticket_type_2.substring(3);
-		confirmpage_money_sum_2 = be.getTableCellText(4, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_sum_yanchu"));
+		confirmpage_money_sum_2 = be.getTableCellText(2, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_sum_yanchu"));
 		
-		confirmpage_active_title_3 = be.getTableCellText(5, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_title_tongyong"));
+		confirmpage_active_title_3 = be.getTableCellText(3, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_title_tongyong"));
 		confirmpage_active_title_3 = confirmpage_active_title_3.trim();
-		confirmpage_ticket_type_3 = be.getTableCellText(5, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_ticket_type_tongyong"));
+		confirmpage_ticket_type_3 = be.getTableCellText(3, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_active_ticket_type_tongyong"));
 		confirmpage_ticket_type_3 = confirmpage_ticket_type_3.substring(3);
-		confirmpage_money_sum_3 = be.getTableCellText(5, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_sum_tongyong"));
+		confirmpage_money_sum_3 = be.getTableCellText(3, CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_sum_tongyong"));
 		
 		confirmpage_money_total = be.getText(CommonFun.yamlconf.getYamlValue("fmb_confirmorder_money_total"));
 		
