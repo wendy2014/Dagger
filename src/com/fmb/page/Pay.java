@@ -167,6 +167,7 @@ public class Pay
 //		be.click("//tbody[@data-id=orderid]/tr[3]/td[@class='trade-operate']/a[@class='c_999 J_cancel']"); //定位失败
 		be.type(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason"), cancelreason);
 		be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_confirm"));
+		Thread.sleep(3000);
 	}
 	public static void cancelOrders(BrowserEmulator be, String cancelreason) throws InterruptedException
 	{
@@ -177,7 +178,7 @@ public class Pay
 			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order"));
 			be.type(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason"), cancelreason);
 			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_confirm"));
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 		}
 		
 	}
