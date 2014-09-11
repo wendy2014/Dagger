@@ -179,6 +179,7 @@ public class Pay
 			be.type(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason"), cancelreason);
 			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_confirm"));
 			Thread.sleep(3000);
+			be.refresh();
 		}
 		
 	}
