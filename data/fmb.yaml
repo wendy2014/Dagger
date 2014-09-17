@@ -82,9 +82,15 @@ fmb_pay_order:
 fmb_cancel_order:
   type: xpath
   value: "//a[@class='c_999 J_cancel']"
+fmb_cancel_order_reason_select_btn:
+  type: xpath
+  value: "//div[@class='cancleReason']"
+fmb_cancel_order_reason_drop_list:
+  type: xpath
+  value: "//ul[@class='resoncBox']/li/input"
 fmb_cancel_order_reason:
   type: xpath
-  value: "//textarea[@class='my_brief J_mess']"
+  value: "//textarea[@class='my_brief']"
 fmb_cancel_confirm:
   type: xpath
   value: "//a[@class='tc_a confirmBtn']"

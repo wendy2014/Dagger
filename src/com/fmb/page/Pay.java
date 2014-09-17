@@ -165,6 +165,8 @@ public class Pay
 		LogTools.screenShot(be);          //截取到我的订单列表当前页面
 		be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order"));
 //		be.click("//tbody[@data-id=orderid]/tr[3]/td[@class='trade-operate']/a[@class='c_999 J_cancel']"); //定位失败
+		be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason_select_btn"));
+		be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason_drop_list"));
 		be.type(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason"), cancelreason);
 		be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_confirm"));
 		Thread.sleep(3000);
@@ -176,6 +178,8 @@ public class Pay
 		{
 //			Pay.cancelOrder(be, cancelreason);
 			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order"));
+			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason_select_btn"));
+			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason_drop_list"));
 			be.type(CommonFun.yamlconf.getYamlValue("fmb_cancel_order_reason"), cancelreason);
 			be.click(CommonFun.yamlconf.getYamlValue("fmb_cancel_confirm"));
 			Thread.sleep(3000);
