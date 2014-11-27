@@ -99,7 +99,7 @@ fmb_order_id:
   value: "//table[@class='tb-void my-cart-box']/tbody/tr[1]/th[1]/span[2]"
 fmb_order_should_pay_sum:
   type: xpath
-  value: "//ul[@class='fr f-14']/li[4]/span[3]"
+  value: "//ul[@class='fr f-14']/li[2]/span[3]"
 fmb_order_alipay_order_id:
   type: xpath
   value: "//div[@class='commodity-message-row']/span[1]"
