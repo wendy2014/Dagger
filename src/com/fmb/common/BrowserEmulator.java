@@ -142,6 +142,7 @@ public class BrowserEmulator {
 		} catch (Exception e) {
 			e.printStackTrace();
 			handleFailure("Failed to open url " + url);
+			
 		}
 		logger.info("Opened url " + url);
 	}
@@ -171,6 +172,7 @@ public class BrowserEmulator {
 		} catch (Exception e) {
 			e.printStackTrace();
 			handleFailure("Failed to click " + xpath);
+			
 		}
 		logger.info("Clicked " + xpath);
 	}

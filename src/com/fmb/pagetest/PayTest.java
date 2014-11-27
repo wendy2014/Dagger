@@ -3,11 +3,9 @@ package com.fmb.pagetest;
  * Author: Shuwen
  * Date:20140821
  */
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import com.fmb.common.BrowserEmulator;
 import com.fmb.datadriver.Constant;
 import com.fmb.datadriver.ExcelUtils;

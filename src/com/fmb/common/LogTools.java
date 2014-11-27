@@ -65,5 +65,6 @@ public class LogTools {
 		// Convert '\' into '/' for web image browsing.
 		return screenShotPath.replace("\\", "/");
 	}
+	
 
 }

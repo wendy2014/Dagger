@@ -41,6 +41,7 @@ public class TopicTest
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData, "createTopic");
 		CommonFun.typeCreateTopic(be, ExcelUtils.getCellData(1, 1), ExcelUtils.getCellData(1, 2));
 		CommonFun.clickConfirmTcbox(be);
+		
 	}
 	@Test(dependsOnMethods="createTopic")
 	public void replyTopic() throws Exception
