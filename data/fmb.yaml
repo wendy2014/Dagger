@@ -1,5 +1,5 @@
 fmb_login_url:
-  type:String
+  type: String
   value: "http://bj.fumubang.com/"
 fmb_login_btn:
   type: xpath
@@ -111,7 +111,7 @@ fmb_pay_yinlian:
   value: "//input[@value='yinlian']"
 fmb_order_yinlian_order_id:
   type: xpath
-  value: "//p[@class='order_num']"
+  value: "//p[@class=' order_num ']"
 fmb_order_yinlian_pay_sum:
   type: xpath
   value: "//em[@class='order_money']"
