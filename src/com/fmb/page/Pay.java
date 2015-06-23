@@ -130,7 +130,7 @@ public class Pay
 //		System.out.println(orderid);
 //		System.out.println(ordersum);
 //		Assert.assertEquals(orderid_alipay, orderid);
-		Assert.assertEquals(ordersum_alipay, ordersum);
+		Assert.assertEquals(ordersum_alipay, ordersum);       
 	}
 	/*
 	 * 提交订单成功后，银联支付

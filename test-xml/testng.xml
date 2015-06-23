@@ -17,6 +17,7 @@
     <classes>
       <class name="com.fmb.pagetest.TopicTest"/>
     </classes>
-  </test><!-- Test -->
+  </test>
+  <!-- Test -->
   
 </suite> <!-- Suite -->
