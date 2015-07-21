@@ -81,7 +81,7 @@
        
        <dependency>
            <groupId>velocity</groupId>
-           <artifactId>velocity-dep</artifactId>
+           <artifactId>velocity</artifactId>
            <version>1.5</version>
        </dependency>
 
